@@ -409,9 +409,11 @@ html, body{
     }
     .card-body{
         color: var(--secondary);
+        padding-top: 0px;
+        padding-left: calc(1.25rem + 12px);
     }
 
-    .accordion .card-header:after {
+    .accordion .card-header button.collapsed:after {
         font-family: 'FontAwesome';  
         content: "\f078";
         position: absolute;
@@ -419,7 +421,15 @@ html, body{
         top: 40px;
         transform: translate(0%, -50%);
     }
+}
 
+.faq-chevron-up:after{
+    font-family: 'FontAwesome';  
+        content: "\f077";
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        transform: translate(0%, -50%);
 }
 
 .contact{
@@ -510,6 +520,10 @@ html, body{
                 transform: rotate(45deg);
             }
 
+        }
+
+        .agree-checkbox{
+            text-decoration: underline;
         }
 
     }

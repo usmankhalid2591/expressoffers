@@ -483,11 +483,23 @@ html, body {
 
 .faq .card-body {
   color: var(--secondary);
+  padding-top: 0px;
+  padding-left: calc(1.25rem + 12px);
 }
 
-.faq .accordion .card-header:after {
+.faq .accordion .card-header button.collapsed:after {
   font-family: 'FontAwesome';
   content: "\f078";
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.faq-chevron-up:after {
+  font-family: 'FontAwesome';
+  content: "\f077";
   position: absolute;
   right: 20px;
   top: 40px;
@@ -589,6 +601,10 @@ html, body {
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.contact__form .agree-checkbox {
+  text-decoration: underline;
 }
 
 .footer {
