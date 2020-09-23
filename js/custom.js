@@ -20,6 +20,6 @@ $(document).ready(function () {
     });
 
     if ($(":button").hasClass("collapsed")) {
-        $(':button').addClass('faq-chevron-up');
+        $('.card-header :button').addClass('faq-chevron-up');
     }
 }); 
