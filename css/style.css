@@ -325,12 +325,12 @@ html, body {
   padding-left: 25px;
 }
 
-.hero .hero-content .cta-hero button {
+.hero .hero-content .cta-hero a {
   border-radius: 0px 10px 10px 0px;
   width: 100px;
 }
 
-.hero .hero-content .cta-hero button:hover {
+.hero .hero-content .cta-hero a:hover {
   background-color: var(--primary);
 }
 
