@@ -53,15 +53,15 @@ html, body {
 }
 
 .--c-primary {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .--c-secondary {
-  color: var(--secondary);
+  color: var(--secondary) !important;
 }
 
 .--c-white {
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .--fw-r {

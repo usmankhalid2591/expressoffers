@@ -52,15 +52,15 @@ html, body{
 }
 
 .--c-primary{
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 
 .--c-secondary{
-    color: var(--secondary);
+    color: var(--secondary) !important;
 }
 
 .--c-white{
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 // Typography
@@ -421,7 +421,7 @@ html, body{
         padding-left: calc(1.25rem + 12px);
     }
 
-    .accordion .card-header button.collapsed:after {
+     .accordion .card-header button.collapsed:after {
         font-family: 'FontAwesome';  
         content: "\f078";
         position: absolute;
