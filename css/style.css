@@ -104,6 +104,10 @@ html, body {
   font-size: 62px;
 }
 
+.--margin-left-minus-40 {
+  margin-left: -40px;
+}
+
 /******************************************
             Navigation bar CSS
 *******************************************/
