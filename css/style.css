@@ -627,3 +627,16 @@ html, body {
   height: 350px;
   text-align: center;
 }
+
+.privacy ol {
+  list-style-position: inside;
+}
+
+.privacy ol li p {
+  display: inline-block;
+}
+
+.privacy th:nth-of-type(1) {
+  width: 250px;
+  padding-left: 0px;
+}
