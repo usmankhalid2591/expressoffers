@@ -158,11 +158,11 @@ html, body{
             align-items: center;
             margin: 0px 15px;
         }
-        .show{
-            .navbar-nav{
-                margin: 0px auto !important;
-            }
-        }
+        // .show{
+        //     .navbar-nav{
+        //         margin: 0px auto !important;
+        //     }
+        // }
     }
     
     @media screen and (max-width: 1424px){
@@ -314,7 +314,7 @@ html, body{
     justify-content: center;
 
     &__left{
-        width: 500px;
+        width: 490px;
         height: 220px;
         display: flex;
         align-items: center;
@@ -322,7 +322,7 @@ html, body{
     }
 
     &__right{
-        width: 500px;
+        width: 490px;
         height: 220px;
         display: flex;
         align-items: center;
@@ -559,4 +559,91 @@ html, body{
         width: 250px;
         padding-left: 0px;
     }
+}
+
+@media (max-width: 1199px){
+    .main-navigation .navbar .navbar-nav {
+        width: inherit;
+        background: var(--light-gray);
+        margin-top: 20px;
+        padding: 1rem;
+    }
+    .main-navigation .navbar .navbar-nav li {
+        justify-content: center;
+        margin: 5px 0px;
+    }
+    .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
+        display: none;
+    }
+
+    .how__graph {
+        bottom: 10px;
+        right: 50px;
+    }
+
+    .how__rocket{
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 991px){
+    .advertisement__right{
+        display: none;
+    }
+
+    .contact__form-outer{
+        margin-top: 50px;
+    }
+
+    .contact__form{
+        right: -50px;
+        bottom: -420px;
+        width: 380px !important;
+    }
+
+    footer{
+        height: 255px !important;
+        display: block !important;
+        text-align: left;
+        p{
+            width: 50%;
+        }
+    }
+    
+}
+
+
+@media (max-width: 768px){
+    .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
+        display: block;
+        justify-content: center;
+        .information{
+            text-align: center;
+        }
+    }
+
+    .reviews{
+        height: 750px;
+    }
+
+    .contact {
+        height: 600px;
+        &__form{
+            right: 0px;
+            bottom: -500px;
+            width: 100% !important;
+        }
+    }
+
+    .footer{
+        height: 350px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: flex-end !important;
+
+        p{
+            width: 100% !important;
+        }
+    }
+
 }
