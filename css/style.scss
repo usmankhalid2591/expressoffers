@@ -14,7 +14,7 @@ html, body{
     box-sizing: border-box;
     padding: 0px !important;
     margin: 0px !important;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 // Colors
@@ -192,10 +192,10 @@ html, body{
 
 .hero{
     position: relative;
+    height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 750px;
     overflow: hidden;
 
     .wave{
@@ -308,7 +308,7 @@ html, body{
 .advertisement{
     position: absolute;
     width: 100%;
-    bottom: -110px;
+    bottom: -90px;
     z-index: 2;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -318,7 +318,7 @@ html, body{
 
     &__left{
         width: 490px;
-        height: 220px;
+        height: 180px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -326,7 +326,7 @@ html, body{
 
     &__right{
         width: 490px;
-        height: 220px;
+        height: 180px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -563,6 +563,32 @@ html, body{
         padding-left: 0px;
     }
 }
+
+
+@media(max-width: 1366px){
+    h1{
+        font-size: 1.75rem !important;
+    }
+
+    .hero{
+        height: 600px;
+        padding: 50px 50px 100px 50px;
+    }
+
+    .cta-hero{
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    .cta-hero input{
+        height: 50px !important;
+    }
+
+    .cta-hero .btn{
+        height: 50px;
+    }
+    
+}
+
 
 @media (max-width: 1199px){
     .main-navigation .navbar .navbar-nav {
