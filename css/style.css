@@ -2,16 +2,18 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-input:focus, button:focus {
+input:focus,
+button:focus {
   outline: none !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
-html, body {
+html,
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0px !important;
@@ -20,13 +22,13 @@ html, body {
 }
 
 :root {
-  --primary: #E00273;
+  --primary: #e00273;
   --secondary: #322153;
-  --text: #65587E;
-  --orange: #F87100;
-  --white: #FFFFFF;
-  --light-pink: #FAE5F1;
-  --light-gray: #EFEFEF;
+  --text: #65587e;
+  --orange: #f87100;
+  --white: #ffffff;
+  --light-pink: #fae5f1;
+  --light-gray: #efefef;
 }
 
 .--bg-primary {
@@ -209,7 +211,7 @@ html, body {
   height: 544px;
   bottom: 0;
   left: -200px !important;
-  opacity: .6;
+  opacity: 0.6;
   background: url(../img/wave-1.png);
   background-size: cover;
   -webkit-animation: animate-wave-1 8s linear infinite;
@@ -217,13 +219,13 @@ html, body {
 }
 
 .hero .wave:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 150vw !important;
   height: 600px;
   bottom: 0;
   left: -200;
-  opacity: .4;
+  opacity: 0.4;
   background: url(../img/wave-2.png);
   background-size: cover;
   -webkit-animation: animate-wave-2 12s linear infinite;
@@ -231,13 +233,13 @@ html, body {
 }
 
 .hero .wave:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 150vw !important;
   height: 1100px;
   bottom: 0;
   left: -200;
-  opacity: .2;
+  opacity: 0.2;
   background: url(../img/wave-3.png);
   background-size: cover;
   -webkit-animation: animate-wave-3 15s linear infinite;
@@ -457,8 +459,8 @@ html, body {
   width: 12px !important;
   margin: 0px 5px !important;
   border-radius: 50%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .owl-dot.active {
@@ -489,7 +491,7 @@ html, body {
 }
 
 .faq .accordion .card-header button.collapsed:after {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   content: "\f078";
   position: absolute;
   right: 20px;
@@ -499,7 +501,7 @@ html, body {
 }
 
 .faq-chevron-up:after {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   content: "\f077";
   position: absolute;
   right: 20px;

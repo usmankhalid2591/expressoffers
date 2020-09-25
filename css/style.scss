@@ -1,116 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
 
-*{
-    box-sizing: border-box;
-    font-family: 'Red Hat Display', sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-input:focus, button:focus{
-    outline: none !important;
-    box-shadow: none !important;
+input:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-html, body{
-    box-sizing: border-box;
-    padding: 0px !important;
-    margin: 0px !important;
-    font-size: 15px;
+html,
+body {
+  box-sizing: border-box;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 15px;
 }
 
 // Colors
-:root{
-    --primary: #E00273;
-    --secondary: #322153;
-    --text: #65587E;
-    --orange: #F87100;
-    --white: #FFFFFF;
-    --light-pink: #FAE5F1;
-    --light-gray: #EFEFEF;
+:root {
+  --primary: #e00273;
+  --secondary: #322153;
+  --text: #65587e;
+  --orange: #f87100;
+  --white: #ffffff;
+  --light-pink: #fae5f1;
+  --light-gray: #efefef;
 }
 
-.--bg-primary{
-    background-color: var(--primary);
+.--bg-primary {
+  background-color: var(--primary);
 }
 
-.--bg-secondary{
-    background-color: var(--secondary);
+.--bg-secondary {
+  background-color: var(--secondary);
 }
 
-.--bg-orange{
-    background-color: var(--orange);
+.--bg-orange {
+  background-color: var(--orange);
 }
 
-.--bg-light-pink{
-    background-color: var(--light-pink);
+.--bg-light-pink {
+  background-color: var(--light-pink);
 }
 
-.--bg-white{
-    background-color: var(--white);
+.--bg-white {
+  background-color: var(--white);
 }
 
-.--bg-light-gray{
-    background-color: var(--light-gray);
+.--bg-light-gray {
+  background-color: var(--light-gray);
 }
 
-.--c-primary{
-    color: var(--primary) !important;
+.--c-primary {
+  color: var(--primary) !important;
 }
 
-.--c-secondary{
-    color: var(--secondary) !important;
+.--c-secondary {
+  color: var(--secondary) !important;
 }
 
-.--c-white{
-    color: var(--white) !important;
+.--c-white {
+  color: var(--white) !important;
 }
 
 // Typography
-.--fw-r{
-    font-weight: 400;
+.--fw-r {
+  font-weight: 400;
 }
 
-.--fw-m{
-    font-weight: 500;
+.--fw-m {
+  font-weight: 500;
 }
 
-.--fw-b{
-    font-weight: 700;
+.--fw-b {
+  font-weight: 700;
 }
 
-.--fs-12{
-    font-size: 0.75rem;
+.--fs-12 {
+  font-size: 0.75rem;
 }
 
-.--fs-16{
-    font-size: 1rem;
+.--fs-16 {
+  font-size: 1rem;
 }
 
-.--fs-18{
-    font-size: 1.125rem;
+.--fs-18 {
+  font-size: 1.125rem;
 }
 
-.--fs-20{
-    font-size: 1.25rem;
+.--fs-20 {
+  font-size: 1.25rem;
 }
 
-.--fs-24{
-    font-size: 1.5rem;
+.--fs-24 {
+  font-size: 1.5rem;
 }
 
-.--fs-30{
-    font-size: 1.875rem;
+.--fs-30 {
+  font-size: 1.875rem;
 }
 
-.--fs-36{
-    font-size: 2.25rem;
+.--fs-36 {
+  font-size: 2.25rem;
 }
 
-.--fs-62{
-    font-size: 3.875rem;
+.--fs-62 {
+  font-size: 3.875rem;
 }
 
-.--margin-left-minus-40{
-    margin-left: -40px;
+.--margin-left-minus-40 {
+  margin-left: -40px;
 }
 
 /******************************************
@@ -118,562 +120,547 @@ html, body{
 *******************************************/
 // Button
 
-.--custom-button{
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 15px 30px;
-    border-radius: 50px;
-    width: 210px;
+.--custom-button {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 50px;
+  width: 210px;
 }
 
-.--custom-button:hover{
-    background-color: var(--secondary);
-    color: var(--white);
+.--custom-button:hover {
+  background-color: var(--secondary);
+  color: var(--white);
 }
 
-.--custom-button-white{
-    background-color: var(--white) !important;
-    color: var(--secondary) !important;
+.--custom-button-white {
+  background-color: var(--white) !important;
+  color: var(--secondary) !important;
 }
 
-.--custom-button-white:hover{
-    background-color: var(--primary) !important;
-    color: var(--white) !important;
+.--custom-button-white:hover {
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
 }
 
-.main-navigation{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    .navbar{
-        // height: 155px;
-        .navbar-brand{
-            img{
-                width: 120px;
-            }
-        }
-        .navbar-nav{
-            width: max-content;
-        }
-        .nav-item{
-            display: flex;
-            align-items: center;
-            margin: 0px 15px;
-        }
-        // .show{
-        //     .navbar-nav{
-        //         margin: 0px auto !important;
-        //     }
-        // }
+.main-navigation {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  .navbar {
+    // height: 155px;
+    .navbar-brand {
+      img {
+        width: 120px;
+      }
     }
-    
-    @media screen and (max-width: 1424px){
-        .information{
-            display: none;
-        }
+    .navbar-nav {
+      width: max-content;
     }
-    
-    @media (max-width: 1199px){
-        .information{
-            display: block;
-        }
-        .information-top{
-            display: block !important;
-        }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      margin: 0px 15px;
     }
-    
-    @media (max-width: 768px){
-        .information-top{
-            display: none !important;
-        }
+    // .show{
+    //     .navbar-nav{
+    //         margin: 0px auto !important;
+    //     }
+    // }
+  }
+
+  @media screen and (max-width: 1424px) {
+    .information {
+      display: none;
     }
+  }
+
+  @media (max-width: 1199px) {
+    .information {
+      display: block;
+    }
+    .information-top {
+      display: block !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .information-top {
+      display: none !important;
+    }
+  }
 }
 
-.hero{
-    position: relative;
-    height: 650px;
+.hero {
+  position: relative;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .wave {
+    position: absolute;
+    width: 150vw !important;
+    height: 544px;
+    bottom: 0;
+    left: -200px !important;
+    opacity: 0.6;
+    background: url(../img/wave-1.png);
+    background-size: cover;
+    animation: animate-wave-1 8s linear infinite;
+  }
+
+  .wave:before {
+    content: "";
+    position: absolute;
+    width: 150vw !important;
+    height: 600px;
+    bottom: 0;
+    left: -200;
+    opacity: 0.4;
+    background: url(../img/wave-2.png);
+    background-size: cover;
+    animation: animate-wave-2 12s linear infinite;
+  }
+
+  .wave:after {
+    content: "";
+    position: absolute;
+    width: 150vw !important;
+    height: 1100px;
+    bottom: 0;
+    left: -200;
+    opacity: 0.2;
+    background: url(../img/wave-3.png);
+    background-size: cover;
+    animation: animate-wave-3 15s linear infinite;
+  }
+
+  @keyframes animate-wave-1 {
+    0% {
+      background-position: 0px;
+    }
+    50% {
+      background-position: 150px;
+    }
+    100% {
+      background-position: 0px;
+    }
+  }
+
+  @keyframes animate-wave-2 {
+    0% {
+      background-position: 0px;
+    }
+    50% {
+      background-position: 150px;
+    }
+    100% {
+      background-position: 0px;
+    }
+  }
+
+  @keyframes animate-wave-3 {
+    0% {
+      background-position: 0px;
+    }
+    50% {
+      background-position: 150px;
+    }
+    100% {
+      background-position: 0px;
+    }
+  }
+
+  .hero-content {
+    .cta-hero {
+      .input-group {
+        height: 64px;
+      }
+
+      input {
+        height: 64px;
+        border-radius: 10px 0px 0px 10px;
+        padding-left: 25px;
+      }
+
+      a {
+        border-radius: 0px 10px 10px 0px;
+        width: 100px;
+      }
+
+      a:hover {
+        background-color: var(--primary);
+      }
+
+      input:focus {
+        background-color: var(--light-pink) !important;
+      }
+    }
+
+    .hero-list {
+      list-style-image: url(../img/tick.png);
+      list-style-position: inside;
+    }
+  }
+}
+
+.advertisement {
+  position: absolute;
+  width: 100%;
+  bottom: -90px;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__left {
+    width: 490px;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+  }
 
-    .wave{
-        position: absolute;
-        width: 150vw !important;
-        height: 544px;
-        bottom: 0;
-        left: -200px !important;
-        opacity: .6;
-        background: url(../img/wave-1.png);
-        background-size: cover;
-        animation: animate-wave-1 8s linear infinite;
-    }
-
-    .wave:before{
-        content: '';
-        position: absolute;
-        width: 150vw !important;
-        height: 600px;
-        bottom: 0;
-        left: -200;
-        opacity: .4;
-        background: url(../img/wave-2.png);
-        background-size: cover;
-        animation: animate-wave-2 12s linear infinite;
-    }
-
-    .wave:after{
-        content: '';
-        position: absolute;
-        width: 150vw !important;
-        height: 1100px;
-        bottom: 0;
-        left: -200;
-        opacity: .2;
-        background: url(../img/wave-3.png);
-        background-size: cover;
-        animation: animate-wave-3 15s linear infinite;
-    }
-
-    @keyframes animate-wave-1 {
-        0%{
-            background-position: 0px;
-        }
-        50%{
-            background-position: 150px;
-        }
-        100%{
-            background-position: 0px;
-        }
-    }
-
-    @keyframes animate-wave-2 {
-        0%{
-            background-position: 0px;
-        }
-        50%{
-            background-position: 150px;
-        }
-        100%{
-            background-position: 0px;
-        }
-    }
-
-    @keyframes animate-wave-3 {
-        0%{
-            background-position: 0px;
-        }
-        50%{
-            background-position: 150px;
-        }
-        100%{
-            background-position: 0px;
-        }
-    }
-
-    .hero-content{
-        .cta-hero{
-            .input-group{
-                height: 64px;
-            }
-    
-            input{
-                height: 64px;
-                border-radius: 10px 0px 0px 10px;
-                padding-left: 25px;
-            }
-    
-            a{
-                border-radius: 0px 10px 10px 0px;
-                width: 100px;
-            }
-    
-            a:hover{
-                background-color: var(--primary);
-            }
-    
-            input:focus{
-                background-color: var(--light-pink) !important;
-            }
-        }
-    
-        .hero-list{
-            list-style-image: url(../img/tick.png);
-            list-style-position: inside;
-        }
-    }
+  &__right {
+    width: 490px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-.advertisement{
+.about {
+  margin-top: 180px;
+}
+
+.whychoose {
+  margin-top: 50px;
+  ul {
+    list-style-image: url(../img/tick-list.png);
+    list-style-position: inside;
+  }
+}
+
+.how {
+  background: url(../img/how-bg.png);
+  background-size: cover;
+  height: 661px;
+
+  &__button {
+    z-index: 1;
+  }
+
+  &__graph {
+    bottom: 10px;
+    right: 400px;
+  }
+}
+
+.reviews {
+  background: url(../img/waves-light.png);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .review {
+    background-color: var(--white);
+  }
+}
+
+.owl-carousel {
+  .item {
+    margin: 0px 10px;
+  }
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.owl-dot {
+  background-color: var(--secondary) !important;
+  height: 12px !important;
+  width: 12px !important;
+  margin: 0px 5px !important;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.owl-dot.active {
+  width: 24px !important;
+  border-radius: 12px;
+  background-color: var(--primary) !important;
+}
+
+.faq {
+  .accordion {
+    box-shadow: 0px 0px 15px 1px #ccc;
+  }
+
+  .card-header {
+    background-color: var(--white);
+    border-bottom: none;
+    button {
+      text-decoration: none;
+      color: var(--secondary);
+    }
+  }
+  .card-body {
+    color: var(--secondary);
+    padding-top: 0px;
+    padding-left: calc(1.25rem + 12px);
+  }
+
+  .accordion .card-header button.collapsed:after {
+    font-family: "FontAwesome";
+    content: "\f078";
     position: absolute;
-    width: 100%;
-    bottom: -90px;
-    z-index: 2;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    right: 20px;
+    top: 40px;
+    transform: translate(0%, -50%);
+  }
+}
 
-    &__left{
-        width: 490px;
-        height: 180px;
+.faq-chevron-up:after {
+  font-family: "FontAwesome";
+  content: "\f077";
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  transform: translate(0%, -50%);
+}
+
+.contact {
+  height: 471px;
+
+  &__form-outer {
+    margin-top: 100px;
+  }
+
+  &__form {
+    box-shadow: 0px 0px 20px 1px #858585;
+    input {
+      height: 52px;
+      border-radius: 50px;
+      padding-left: 30px;
+    }
+
+    input:focus {
+      color: var(--secondary) !important;
+      background-color: var(--light-gray) !important;
+    }
+
+    .form-check {
+      height: 52px !important;
+      padding: 0px;
+
+      .container {
         display: flex;
         align-items: center;
-        justify-content: center;
-    }
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-    &__right{
-        width: 490px;
-        height: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.about{
-    margin-top: 180px;
-}
-
-.whychoose{
-    margin-top: 50px;
-    ul{
-        list-style-image: url(../img/tick-list.png);
-        list-style-position: inside;
-    }
-}
-
-.how{
-    background: url(../img/how-bg.png);
-    background-size: cover;
-    height: 661px;
-
-    &__button{
-
-        z-index: 1;
-
-    }
-
-    &__graph{
-
-        bottom: 10px;
-        right: 400px;
-
-    }
-}
-
-.reviews{
-    background: url(../img/waves-light.png);
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    .review{
-        background-color: var(--white);
-    }
-
-}
-
-.owl-carousel{
-    .item{
-        margin: 0px 10px;
-    }
-}
-
-.owl-dots{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.owl-dot{
-    background-color: var(--secondary) !important;
-    height: 12px !important;
-    width: 12px !important;
-    margin: 0px 5px !important;
-    border-radius: 50%;
-    transition: all .4s;
-}
-
-.owl-dot.active{
-    width: 24px !important;
-    border-radius: 12px;
-    background-color: var(--primary) !important;
-}
-
-.faq{
-
-    .accordion{
-        box-shadow: 0px 0px 15px 1px #ccc;
-    }
-
-    .card-header{
-        background-color: var(--white);
-        border-bottom: none;
-        button{
-            text-decoration: none;
-            color: var(--secondary);
-        }
-    }
-    .card-body{
-        color: var(--secondary);
-        padding-top: 0px;
-        padding-left: calc(1.25rem + 12px);
-    }
-
-     .accordion .card-header button.collapsed:after {
-        font-family: 'FontAwesome';  
-        content: "\f078";
+      /* Hide the browser's default checkbox */
+      .container input {
         position: absolute;
-        right: 20px;
-        top: 40px;
-        transform: translate(0%, -50%);
-    }
-}
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
 
-.faq-chevron-up:after{
-    font-family: 'FontAwesome';  
-        content: "\f077";
+      /* Create a custom checkbox */
+      .checkmark {
         position: absolute;
-        right: 20px;
-        top: 40px;
-        transform: translate(0%, -50%);
-}
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border: 2px solid var(--primary);
+        border-radius: 7px;
+      }
 
-.contact{
-    height: 471px;
+      /* When the checkbox is checked, add a blue background */
+      .container input:checked ~ .checkmark {
+        background-color: var(--primary);
+      }
 
-    &__form-outer{
-        margin-top: 100px;
-    }
-
-    &__form{
-        box-shadow: 0px 0px 20px 1px #858585;
-        input{
-            height: 52px;
-            border-radius: 50px;
-            padding-left: 30px;
-        }
-
-        input:focus{
-            color: var(--secondary) !important;
-            background-color: var(--light-gray) !important;
-        }
-
-        .form-check{
-            height: 52px !important;
-            padding: 0px;
-            
-            .container {
-                display: flex;
-                align-items: center;
-                position: relative;
-                padding-left: 35px;
-                margin-bottom: 12px;
-                cursor: pointer;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-            
-              /* Hide the browser's default checkbox */
-            .container input {
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-            }
-            
-            /* Create a custom checkbox */
-            .checkmark {
-                position: absolute;
-                left: 0;
-                height: 20px;
-                width: 20px;
-                background-color: #fff;
-                border: 2px solid var(--primary);
-                border-radius: 7px;
-            }
-                            
-              /* When the checkbox is checked, add a blue background */
-            .container input:checked ~ .checkmark {
-                background-color: var(--primary);
-            }
-            
-              /* Create the checkmark/indicator (hidden when not checked) */
-            .checkmark:after {
-                content: "";
-                position: absolute;
-                display: none;
-            }
-            
-              /* Show the checkmark when checked */
-            .container input:checked ~ .checkmark:after {
-                display: block;
-            }
-            
-              /* Style the checkmark/indicator */
-            .container .checkmark:after {
-                left: 5px;
-                top: 1px;
-                width: 7px;
-                height: 12px;
-                border: solid white;
-                border-width: 0 3px 3px 0;
-                -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                transform: rotate(45deg);
-            }
-
-        }
-
-        .agree-checkbox{
-            .underlined-privacy{
-                text-decoration: underline !important;
-            }
-        }
-
-    }
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 350px;
-    text-align: center;
-}
-
-.privacy{
-    ol{
-        list-style-position: inside;
-        li{
-            p{
-                display: inline-block;
-            }
-        }
-    }
-    th:nth-of-type(1){
-        width: 250px;
-        padding-left: 0px;
-    }
-}
-
-
-@media(max-width: 1366px){
-    h1{
-        font-size: 1.75rem !important;
-    }
-
-    .hero{
-        height: 600px;
-        padding: 50px 50px 100px 50px;
-    }
-
-    .cta-hero{
-        height: 50px;
-        margin-bottom: 15px;
-    }
-    .cta-hero input{
-        height: 50px !important;
-    }
-
-    .cta-hero .btn{
-        height: 50px;
-    }
-    
-}
-
-
-@media (max-width: 1199px){
-    .main-navigation .navbar .navbar-nav {
-        width: inherit;
-        background: var(--light-gray);
-        margin-top: 20px;
-        padding: 1rem;
-    }
-    .main-navigation .navbar .navbar-nav li {
-        justify-content: center;
-        margin: 5px 0px;
-    }
-    .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
         display: none;
-    }
+      }
 
-    .how__graph {
-        bottom: 10px;
-        right: 50px;
-    }
-
-    .how__rocket{
-        justify-content: center !important;
-    }
-}
-
-@media (max-width: 991px){
-    .advertisement__right{
-        display: none;
-    }
-
-    .contact__form-outer{
-        margin-top: 50px;
-    }
-
-    .contact__form{
-        right: -50px;
-        bottom: -420px;
-        width: 380px !important;
-    }
-
-    footer{
-        height: 255px !important;
-        display: block !important;
-        text-align: left;
-        p{
-            width: 50%;
-        }
-    }
-    
-}
-
-
-@media (max-width: 768px){
-    .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
+      /* Show the checkmark when checked */
+      .container input:checked ~ .checkmark:after {
         display: block;
-        justify-content: center;
-        .information{
-            text-align: center;
-        }
+      }
+
+      /* Style the checkmark/indicator */
+      .container .checkmark:after {
+        left: 5px;
+        top: 1px;
+        width: 7px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
     }
 
-    .reviews{
-        height: 750px;
+    .agree-checkbox {
+      .underlined-privacy {
+        text-decoration: underline !important;
+      }
     }
-
-    .contact {
-        height: 600px;
-        &__form{
-            right: 0px;
-            bottom: -500px;
-            width: 100% !important;
-        }
-    }
-
-    .footer{
-        height: 350px !important;
-        display: flex !important;
-        justify-content: center !important;
-        align-items: flex-end !important;
-
-        p{
-            width: 100% !important;
-        }
-    }
-
+  }
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 350px;
+  text-align: center;
+}
+
+.privacy {
+  ol {
+    list-style-position: inside;
+    li {
+      p {
+        display: inline-block;
+      }
+    }
+  }
+  th:nth-of-type(1) {
+    width: 250px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 1366px) {
+  h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .hero {
+    height: 600px;
+    padding: 50px 50px 100px 50px;
+  }
+
+  .cta-hero {
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .cta-hero input {
+    height: 50px !important;
+  }
+
+  .cta-hero .btn {
+    height: 50px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-navigation .navbar .navbar-nav {
+    width: inherit;
+    background: var(--light-gray);
+    margin-top: 20px;
+    padding: 1rem;
+  }
+  .main-navigation .navbar .navbar-nav li {
+    justify-content: center;
+    margin: 5px 0px;
+  }
+  .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
+    display: none;
+  }
+
+  .how__graph {
+    bottom: 10px;
+    right: 50px;
+  }
+
+  .how__rocket {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .advertisement__right {
+    display: none;
+  }
+
+  .contact__form-outer {
+    margin-top: 50px;
+  }
+
+  .contact__form {
+    right: -50px;
+    bottom: -420px;
+    width: 380px !important;
+  }
+
+  footer {
+    height: 255px !important;
+    display: block !important;
+    text-align: left;
+    p {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
+    display: block;
+    justify-content: center;
+    .information {
+      text-align: center;
+    }
+  }
+
+  .reviews {
+    height: 750px;
+  }
+
+  .contact {
+    height: 600px;
+    &__form {
+      right: 0px;
+      bottom: -500px;
+      width: 100% !important;
+    }
+  }
+
+  .footer {
+    height: 350px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: flex-end !important;
+
+    p {
+      width: 100% !important;
+    }
+  }
+}
