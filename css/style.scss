@@ -14,6 +14,7 @@ html, body{
     box-sizing: border-box;
     padding: 0px !important;
     margin: 0px !important;
+    font-size: 14px;
 }
 
 // Colors
@@ -77,35 +78,35 @@ html, body{
 }
 
 .--fs-12{
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .--fs-16{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .--fs-18{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .--fs-20{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .--fs-24{
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .--fs-30{
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .--fs-36{
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .--fs-62{
-    font-size: 62px;
+    font-size: 3.875rem;
 }
 
 .--margin-left-minus-40{
@@ -146,9 +147,11 @@ html, body{
     top: 0;
     z-index: 3;
     .navbar{
-        height: 155px;
+        // height: 155px;
         .navbar-brand{
-            width: 196px;
+            img{
+                width: 120px;
+            }
         }
         .navbar-nav{
             width: max-content;
@@ -647,3 +650,4 @@ html, body{
     }
 
 }
+
