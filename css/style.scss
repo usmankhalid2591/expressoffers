@@ -446,37 +446,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 
   .review {
     background-color: var(--white);
   }
-}
-
-.owl-carousel {
-  .item {
-    margin: 0px 10px;
-  }
-}
-
-.owl-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-
-.owl-dot {
-  background-color: var(--secondary) !important;
-  height: 12px !important;
-  width: 12px !important;
-  margin: 0px 5px !important;
-  border-radius: 50%;
-  transition: all 0.4s;
-}
-
-.owl-dot.active {
-  width: 24px !important;
-  border-radius: 12px;
-  background-color: var(--primary) !important;
 }
 
 .faq {
@@ -795,4 +769,34 @@ body {
     }
 
   }
+}
+
+
+// Carousel CSS
+
+.owl-carousel {
+  .item {
+    margin: 0px 10px;
+  }
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.owl-dot {
+  background-color: var(--secondary) !important;
+  height: 12px !important;
+  width: 12px !important;
+  margin: 0px 5px !important;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.owl-dot.active {
+  width: 24px !important;
+  border-radius: 12px;
+  background-color: var(--primary) !important;
 }

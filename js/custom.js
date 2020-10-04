@@ -23,3 +23,4 @@ $(document).ready(function () {
         $('.card-header :button').addClass('faq-chevron-up');
     }
 }); 
+
