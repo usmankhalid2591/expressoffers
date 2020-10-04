@@ -115,9 +115,88 @@ body {
   margin-left: -40px;
 }
 
+.--w-35 {
+  width: 35%;
+}
+
+.--w-65 {
+  width: 65%;
+}
+
 /******************************************
             Navigation bar CSS
 *******************************************/
+.form-check {
+  height: 52px !important;
+  padding: 0px;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+
+.form-check .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form-check .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form-check .checkmark {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid var(--primary);
+  border-radius: 7px;
+}
+
+.form-check .container input:checked ~ .checkmark {
+  background-color: var(--primary);
+}
+
+.form-check .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form-check .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form-check .container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .--custom-button {
   background-color: var(--primary);
   color: var(--white);
@@ -534,77 +613,6 @@ body {
   background-color: var(--light-gray) !important;
 }
 
-.contact__form .form-check {
-  height: 52px !important;
-  padding: 0px;
-  /* Hide the browser's default checkbox */
-  /* Create a custom checkbox */
-  /* When the checkbox is checked, add a blue background */
-  /* Create the checkmark/indicator (hidden when not checked) */
-  /* Show the checkmark when checked */
-  /* Style the checkmark/indicator */
-}
-
-.contact__form .form-check .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.contact__form .form-check .container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-.contact__form .form-check .checkmark {
-  position: absolute;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border: 2px solid var(--primary);
-  border-radius: 7px;
-}
-
-.contact__form .form-check .container input:checked ~ .checkmark {
-  background-color: var(--primary);
-}
-
-.contact__form .form-check .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.contact__form .form-check .container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.contact__form .form-check .container .checkmark:after {
-  left: 5px;
-  top: 1px;
-  width: 7px;
-  height: 12px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
 .contact__form .agree-checkbox .underlined-privacy {
   text-decoration: underline !important;
 }
@@ -795,4 +803,33 @@ body {
   .reviews .review {
     padding: 20px !important;
   }
+}
+
+@media (max-width: 350px) {
+  .advertisement__left {
+    width: 300px !important;
+  }
+}
+
+.modal-1-outer span {
+  color: white;
+}
+
+.modal-1-outer .modal-header {
+  border: none !important;
+  position: absolute;
+  right: 0px;
+  top: -5px;
+}
+
+.modal-1-outer .modal-1 {
+  width: 500px;
+}
+
+.modal-1-outer .modal-1__left .form-check {
+  height: initial !important;
+}
+
+.modal-1-outer .modal-1__right img {
+  height: 370px;
 }

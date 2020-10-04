@@ -115,9 +115,87 @@ body {
   margin-left: -40px;
 }
 
+.--w-35{
+  width: 35%;
+}
+
+.--w-65{
+  width: 65%;
+}
+
 /******************************************
             Navigation bar CSS
 *******************************************/
+
+.form-check {
+  height: 52px !important;
+  padding: 0px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid var(--primary);
+    border-radius: 7px;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: var(--primary);
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+
 // Button
 
 .--custom-button {
@@ -459,74 +537,6 @@ body {
       background-color: var(--light-gray) !important;
     }
 
-    .form-check {
-      height: 52px !important;
-      padding: 0px;
-
-      .container {
-        display: flex;
-        align-items: center;
-        position: relative;
-        padding-left: 35px;
-        margin-bottom: 12px;
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      /* Hide the browser's default checkbox */
-      .container input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-      }
-
-      /* Create a custom checkbox */
-      .checkmark {
-        position: absolute;
-        left: 0;
-        height: 20px;
-        width: 20px;
-        background-color: #fff;
-        border: 2px solid var(--primary);
-        border-radius: 7px;
-      }
-
-      /* When the checkbox is checked, add a blue background */
-      .container input:checked ~ .checkmark {
-        background-color: var(--primary);
-      }
-
-      /* Create the checkmark/indicator (hidden when not checked) */
-      .checkmark:after {
-        content: "";
-        position: absolute;
-        display: none;
-      }
-
-      /* Show the checkmark when checked */
-      .container input:checked ~ .checkmark:after {
-        display: block;
-      }
-
-      /* Style the checkmark/indicator */
-      .container .checkmark:after {
-        left: 5px;
-        top: 1px;
-        width: 7px;
-        height: 12px;
-        border: solid white;
-        border-width: 0 3px 3px 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-      }
-    }
-
     .agree-checkbox {
       .underlined-privacy {
         text-decoration: underline !important;
@@ -729,3 +739,37 @@ body {
 }
 
 }
+
+@media (max-width: 350px){
+  .advertisement__left{
+    width: 300px !important;
+  }
+}
+
+.modal-1-outer{
+
+  span{
+    color: white;
+  }
+
+  .modal-header{
+    border: none !important;
+    position: absolute;
+    right: 0px;
+    top: -5px;
+  }
+  .modal-1{
+    width: 500px;
+    &__left{
+      .form-check{
+        height: initial !important;
+      }
+    }
+    &__right{
+      img{
+        height: 370px;
+      }
+    }
+  }
+}
+
