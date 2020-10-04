@@ -654,6 +654,17 @@ body {
   .cta-hero .btn {
     height: 50px;
   }
+  .how {
+    height: 500px;
+  }
+  .how .how__rocket {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .how .how__graph {
+    right: 50px;
+  }
 }
 
 @media (max-width: 1199px) {
