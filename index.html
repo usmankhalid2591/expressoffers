@@ -88,7 +88,14 @@
 				<div class="row">
 					<div class="col-lg-6 col-md-12">
 						<div class="pt-5">
-							<h1 class="--c-primary --fw-b --fs-36">Hi. We want to buy your home.</h1>
+							<h1 class="--c-primary --fw-b --fs-36">Hi. We want to buy your home.
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop-1">
+									every 5 second
+								</button>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop-2">
+									Last step
+								</button>
+							</h1>
 							<h1 class="--c-secondary --fw-b --fs-36">Get your free valuation & cash offer now</h1>
 							<div class="cta-hero">
 								<div class="input-group mb-3">
@@ -502,16 +509,8 @@
 
 	<!-- Modals -->
 
-
-
-
-
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-		Launch demo modal
-	</button>
-
-	<!-- Modal -->
-	<div class="modal-1-outer modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+	<!-- Every 5 second modal -->
+	<div class="modal-1-outer modal fade" id="staticBackdrop-1" data-backdrop="static" data-keyboard="false" tabindex="-1"
 		aria-labelledby="staticBackdropLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -558,6 +557,53 @@
 					</div>
 					<div class="modal-1__right --w-35">
 						<img class="img-fluid" src="img/modal-1-bg.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Every 5 second modal -->
+	<div class="modal-2-outer modal fade" id="staticBackdrop-2" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-2 bg-white">
+					<div class="--bg-primary d-flex flex-column justify-content-around p-5">
+						<h4 class="--fs-30 --c-white">Last step!</h4>
+						<h3 class="--fs-16 --c-white">  Enter your details below for your free valuation and offer.</h3>
+						<div class="input-group mb-2">
+							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+								placeholder="Full name*" aria-label="Recipient's username"
+								aria-describedby="button-addon2">
+						</div>
+						<div class="input-group mb-2">
+							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+								placeholder="Enter postcode*" aria-label="Recipient's username"
+								aria-describedby="button-addon2">
+						</div>
+						<div class="input-group mb-2">
+							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+								placeholder="Telephone (ideally mobile)*" aria-label="Recipient's username"
+								aria-describedby="button-addon2">
+						</div>
+						<div class="form-check">
+							<label class="container mb-0 --fs-16 agree-checkbox --c-white"> I agree to the Privacy Policy</a>
+								<input type="checkbox" checked="checked">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="d-flex justify-content-end">
+							<a href="javascript:void(0);"
+							class="btn --custom-button --bg-orange --fw-b --fs-16 d-block mb-2">Get a cash offer!</a>
+						</div>
+
 					</div>
 				</div>
 			</div>

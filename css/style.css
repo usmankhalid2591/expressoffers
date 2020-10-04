@@ -40,7 +40,7 @@ body {
 }
 
 .--bg-orange {
-  background-color: var(--orange);
+  background-color: var(--orange) !important;
 }
 
 .--bg-light-pink {
@@ -832,4 +832,25 @@ body {
 
 .modal-1-outer .modal-1__right img {
   height: 370px;
+}
+
+.modal-2-outer span {
+  color: white;
+}
+
+.modal-2-outer .modal-content {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.modal-2-outer .modal-content .modal-header {
+  border: none !important;
+  position: absolute;
+  right: 0px;
+  top: -5px;
+}
+
+.modal-2-outer .modal-content input {
+  border-radius: 50px;
+  padding-left: 15px;
 }
