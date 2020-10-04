@@ -581,20 +581,14 @@ body {
   }
 
   .how{
-
-
-      height: 500px;
-
+    height: 500px;
     .how__rocket{
       justify-content: center !important;
     }
-
     .how__graph {
       right: 50px;
+    }
   }
-
-  }
-
 }
 
 @media (max-width: 1199px) {
@@ -645,6 +639,15 @@ body {
       width: 50%;
     }
   }
+
+  .how {
+    &__graph{
+      img{
+        width: 400px;
+      }
+    }
+}
+
 }
 
 @media (max-width: 768px) {
@@ -653,6 +656,16 @@ body {
     justify-content: center;
     .information {
       text-align: center;
+    }
+  }
+
+  .how{
+    height: 400px !important;
+    &__rocket{
+      display: none;
+    }
+    &__graph{
+      display: none;
     }
   }
 
@@ -679,4 +692,40 @@ body {
       width: 100% !important;
     }
   }
+}
+
+@media (max-width: 414px){
+  .hero{
+    height: 700px
+  }
+
+  .advertisement__left{
+    width: 375px;
+    box-shadow: 0px 0px 5px 0px var(--light-pink);
+    h2{
+      font-size: 1.5rem;
+    }
+  }
+
+  .about {
+    margin-top: 120px;
+}
+
+.whychoose{
+  padding: 0px !important;
+}
+
+.how{
+  padding: 0px !important;
+  padding-top: 20px !important;
+}
+
+.reviews{
+  padding: 0px !important;
+  height: 550px;
+  .review{
+    padding: 20px !important;
+  }
+}
+
 }
