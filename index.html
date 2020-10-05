@@ -21,6 +21,9 @@
 	<!-- Style -->
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- Slider -->
+	<link rel="stylesheet" href="css/slider.css">
+
 	<title>Express Offers</title>
 </head>
 
@@ -237,26 +240,92 @@
 		<h1 class="--fs-62 --fw-b text-center --c-secondary">Reviews</h1>
 		<p class="--fw-r --fs-16 text-center">A few of our customer stories</p>
 
-		<div class="container">
-			<div class="review p-5">
-				<div class="row">
-					<div class="col-3">
-						<div class="--fs-16 --fw-b">Mr Banks</div>
+
+		<div class="swiper-container swiper-slider swiper-slider-2 swiper-fix swiper-container-coverflow swiper-container-3d swiper-container-initialized swiper-container-vertical m-0" data-loop="false" data-direction="vertical" data-effect="coverflow" data-centered-slides="true" data-slides-per-view="auto" data-initial-slide="2">
+			<div class="swiper-wrapper"
+				style="transition-duration: 0ms; transform: translate3d(0px, -585px, 0px); perspective-origin: 825px 50%;">
+				<div class="swiper-slide"
+					style="transition-duration: 0ms; transform: translate3d(0px, 560px, -160px) rotateX(0deg) rotateY(0deg); z-index: -1;">
+					<div class="container">
+						<div class="review p-5">
+							<div class="row">
+								<div class="col-3">
+									<div class="--fs-16 --fw-b">Mr Banks</div>
+								</div>
+								<div class="col-9">
+									<h6 class="--fw-b --fs-16"> Mr Banks says:</h6>
+									<p class="--fw-r --fs-16">"First of all we would like to say how professional everything
+										was from start to end. I’ve never slept so soundly having paid off all my debts and
+										I’ve never had so much money. I recently went away on holiday and didn’t have to use
+										my credit card. I’ve already
+										recommended you many times."</p>
+								</div>
+								<div class="col-3">
+									<p class="--fw-m --fs-16">St Helens</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-9">
-						<h6 class="--fw-b --fs-16"> Mr Banks says:</h6>
-						<p class="--fw-r --fs-16">"First of all we would like to say how professional everything
-							was from start to end. I’ve never slept so soundly having paid off all my debts and
-							I’ve never had so much money. I recently went away on holiday and didn’t have to use
-							my credit card. I’ve already
-							recommended you many times."</p>
+				</div>
+				<div class="swiper-slide swiper-slide-prev"
+					style="transition-duration: 0ms; transform: translate3d(0px, 280px, -80px) rotateX(0deg) rotateY(0deg); z-index: 0;">
+					<div class="container">
+						<div class="review p-5">
+							<div class="row">
+								<div class="col-3">
+									<div class="--fs-16 --fw-b">Mr Banks</div>
+								</div>
+								<div class="col-9">
+									<h6 class="--fw-b --fs-16"> Mr Banks says:</h6>
+									<p class="--fw-r --fs-16">"First of all we would like to say how professional everything
+										was from start to end. I’ve never slept so soundly having paid off all my debts and
+										I’ve never had so much money. I recently went away on holiday and didn’t have to use
+										my credit card. I’ve already
+										recommended you many times."</p>
+								</div>
+								<div class="col-3">
+									<p class="--fw-m --fs-16">St Helens</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-3">
-						<p class="--fw-m --fs-16">St Helens</p>
+				</div>
+				<div class="swiper-slide swiper-slide-active"
+					style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1;">
+					<div class="container">
+						<div class="review p-5">
+							<div class="row">
+								<div class="col-3">
+									<div class="--fs-16 --fw-b">Mr Banks</div>
+								</div>
+								<div class="col-9">
+									<h6 class="--fw-b --fs-16"> Mr Banks says:</h6>
+									<p class="--fw-r --fs-16">"First of all we would like to say how professional everything
+										was from start to end. I’ve never slept so soundly having paid off all my debts and
+										I’ve never had so much money. I recently went away on holiday and didn’t have to use
+										my credit card. I’ve already
+										recommended you many times."</p>
+								</div>
+								<div class="col-3">
+									<p class="--fw-m --fs-16">St Helens</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!--Swiper Pagination-->
+			<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+					class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+					class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span
+					class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+					aria-label="Go to slide 3"></span></div>
+			<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 		</div>
+
+
+
+
 
 	</section>
 
@@ -568,17 +637,15 @@
 		</div>
 	</div>
 
-
-
 	<!-- Script tags -->
-	<script src="js/jquery.js"></script>
+	<script src="js/core.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/popper.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/gsap.min.js"></script>
 	<script src="js/CSSRulePlugin3.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 
