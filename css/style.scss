@@ -442,7 +442,7 @@ body {
 
 .reviews {
   background: url(../img/waves-light.png);
-  height: 800px;
+  min-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -654,7 +654,7 @@ body {
   }
 
   .reviews {
-    height: 750px;
+    min-height: 750px;
   }
 
   .contact {
@@ -706,7 +706,7 @@ body {
 
 .reviews{
   padding: 0px !important;
-  height: 550px;
+  min-height: 550px;
   .review{
     padding: 20px !important;
   }
@@ -772,31 +772,31 @@ body {
 }
 
 
-// Carousel CSS
+// // Carousel CSS
 
-.owl-carousel {
-  .item {
-    margin: 0px 10px;
-  }
-}
+// .owl-carousel {
+//   .item {
+//     margin: 0px 10px;
+//   }
+// }
 
-.owl-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
+// .owl-dots {
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 40px;
+// }
 
-.owl-dot {
-  background-color: var(--secondary) !important;
-  height: 12px !important;
-  width: 12px !important;
-  margin: 0px 5px !important;
-  border-radius: 50%;
-  transition: all 0.4s;
-}
+// .owl-dot {
+//   background-color: var(--secondary) !important;
+//   height: 12px !important;
+//   width: 12px !important;
+//   margin: 0px 5px !important;
+//   border-radius: 50%;
+//   transition: all 0.4s;
+// }
 
-.owl-dot.active {
-  width: 24px !important;
-  border-radius: 12px;
-  background-color: var(--primary) !important;
-}
+// .owl-dot.active {
+//   width: 24px !important;
+//   border-radius: 12px;
+//   background-color: var(--primary) !important;
+// }
