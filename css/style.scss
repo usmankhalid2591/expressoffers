@@ -250,7 +250,7 @@ body {
 
 .hero {
   position: relative;
-  height: 650px;
+  min-height: 500px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -521,11 +521,9 @@ body {
   }
 }
 
-@media (min-width: 1600px) {
-  .hero {
-    height: 800px;
-  }
-}
+/******************************************************
+                Media Queries
+******************************************************/
 
 @media (max-width: 1366px) {
   .navbar-brand {
@@ -535,11 +533,6 @@ body {
 
   h1 {
     font-size: 1.75rem !important;
-  }
-
-  .hero {
-    height: 500px;
-    display: block !important;
   }
 
   .cta-hero {
@@ -678,11 +671,6 @@ body {
       width: 100%;
     }
   }
-
-  .hero {
-    height: 700px;
-  }
-
   .advertisement__left {
     width: 375px;
     box-shadow: 0px 0px 5px 0px var(--light-pink);

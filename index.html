@@ -65,7 +65,7 @@
 							<a class="nav-link --fw-m --c-secondary" href="#faq">FAQs</a>
 						</li>
 						<li class="nav-item">
-							<a class="btn --custom-button --fw-b" href="#contactUs">Get a cash offer</a>
+							<a class="btn --custom-button --fw-b" href="javascript:void(0);">Get a cash offer</a>
 						</li>
 						<li class="nav-item">
 							<div class="information">
@@ -82,6 +82,7 @@
 	</header>
 
 	<div class="hero" id="hero">
+
 		<div class="wave"></div>
 
 		<div class="hero-content">
@@ -90,21 +91,23 @@
 					<div class="col-lg-6 col-md-12">
 						<div class="pt-5">
 							<h1 class="--c-primary --fw-b --fs-36">Hi. We want to buy your home.
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop-1" style="
+								<!-- <button type="button" class="btn btn-primary" data-toggle="modal"
+									data-target="#staticBackdrop-1" style="
     position: absolute;
     z-index: 99999;
     top: -50px;
 ">
 									every 5 second
 								</button>
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop-2" style="
+								<button type="button" class="btn btn-primary" data-toggle="modal"
+									data-target="#staticBackdrop-2" style="
     position: absolute;
     z-index: 99999;
     top: -50px;
     left: 270px;
 ">
 									Last step
-								</button>
+								</button> -->
 							</h1>
 							<h1 class="--c-secondary --fw-b --fs-36">Get your free valuation & cash offer now</h1>
 							<div class="cta-hero">
@@ -241,7 +244,9 @@
 		</div>
 	</section>
 
-	<section class="section section-inset-2 section-inset-3 bg-default text-center position-relative novi-bg novi-bg-img" id="program">
+	<section
+		class="section section-inset-2 section-inset-3 bg-default text-center position-relative novi-bg novi-bg-img"
+		id="program">
 		<svg class="wave-light wave-light-reverse-y wave-light-2" width="1920" height="1060" viewBox="0 0 1920 1060"
 			fill="none">
 			<path class="wave-path"
@@ -348,7 +353,6 @@
 			</div>
 		</div>
 	</section>
-
 
 	<div class="faq p-5 bg-white" id="faq">
 		<h1 class="--fs-62 --fw-b text-center --c-secondary">FAQs</h1>
@@ -493,7 +497,7 @@
 
 	</div>
 
-	<div class="contact mt-5 p-5 --bg-primary" id="contactUs">
+	<div class="contact mt-5 p-5 --bg-primary">
 		<div class="container">
 			<div class="row contact__form-outer h-100">
 				<div class="col-lg-5 col-md-12">
@@ -548,7 +552,7 @@
 		</div>
 	</div>
 
-	<footer class="footer p-5" id="footer">
+	<footer class="footer p-5">
 		<p class="--c-secondary">Express Offers - Head Office: St George's House, 56 Peter Street, Manchester, M2 3NQ -
 			Company No: 08768424</p>
 	</footer>
@@ -609,7 +613,6 @@
 		</div>
 	</div>
 
-
 	<!-- Every 5 second modal -->
 	<div class="modal-2-outer modal fade" id="staticBackdrop-2" data-backdrop="static" data-keyboard="false"
 		tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -665,7 +668,6 @@
 	<script src="js/popper.js"></script>
 	<script src="js/script.js"></script>
 
-
 	<!-- Smooth Scroll Jquery -->
 	<script>
 		$('.navbar a').on('click', function (e) {
@@ -679,6 +681,16 @@
 				}, 800);
 			};
 		});
+
+		let intViewportHeight = window.innerHeight;
+
+		document.querySelector('.hero').style.height = (intViewportHeight - 240) + 'px';
+
+		function heroHeightSet(){
+			document.querySelector('.hero').style.height = (intViewportHeight - 240) + 'px';
+		}
+
+		window.addEventListener('resize', heroHeightSet);
 
 	</script>
 

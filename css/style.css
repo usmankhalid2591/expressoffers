@@ -256,7 +256,7 @@ body {
 
 .hero {
   position: relative;
-  height: 650px;
+  min-height: 500px !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,12 +601,9 @@ body {
   padding-left: 0px;
 }
 
-@media (min-width: 1600px) {
-  .hero {
-    height: 800px;
-  }
-}
-
+/******************************************************
+                Media Queries
+******************************************************/
 @media (max-width: 1366px) {
   .navbar-brand {
     height: 78px;
@@ -614,10 +611,6 @@ body {
   }
   h1 {
     font-size: 1.75rem !important;
-  }
-  .hero {
-    height: 500px;
-    display: block !important;
   }
   .cta-hero {
     height: 50px;
@@ -750,9 +743,6 @@ body {
   }
   .main-navigation .navbar .navbar-brand img {
     width: 100%;
-  }
-  .hero {
-    height: 700px;
   }
   .advertisement__left {
     width: 375px;
