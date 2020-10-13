@@ -613,7 +613,7 @@ body {
     font-size: 1.75rem !important;
   }
   .hero .hero-rocket img {
-    width: 300px !important;
+    width: 300px;
   }
   .cta-hero {
     height: 50px;
