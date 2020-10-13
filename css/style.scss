@@ -17,6 +17,7 @@ body {
   padding: 0px !important;
   margin: 0px !important;
   font-size: 15px;
+  position: relative;
 }
 
 // Colors
@@ -80,27 +81,27 @@ body {
 }
 
 .--fs-12 {
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
 }
 
 .--fs-16 {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .--fs-18 {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 }
 
 .--fs-20 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 .--fs-24 {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 
 .--fs-30 {
-  font-size: 1.875rem;
+  font-size: 1.875rem !important;
 }
 
 .--fs-36 {
@@ -108,18 +109,18 @@ body {
 }
 
 .--fs-62 {
-  font-size: 3.875rem;
+  font-size: 3.875rem !important;
 }
 
 .--margin-left-minus-40 {
   margin-left: -40px;
 }
 
-.--w-35{
+.--w-35 {
   width: 35%;
 }
 
-.--w-65{
+.--w-65 {
   width: 65%;
 }
 
@@ -195,9 +196,7 @@ body {
   }
 }
 
-
-// Button
-
+// Buttons
 .--custom-button {
   background-color: var(--primary);
   color: var(--white);
@@ -230,7 +229,8 @@ body {
     // height: 155px;
     .navbar-brand {
       img {
-        width: 120px;
+        width: 100%;
+        height: 100%;
       }
     }
     .navbar-nav {
@@ -240,32 +240,10 @@ body {
       display: flex;
       align-items: center;
       margin: 0px 15px;
-    }
-    // .show{
-    //     .navbar-nav{
-    //         margin: 0px auto !important;
-    //     }
-    // }
-  }
 
-  @media screen and (max-width: 1424px) {
-    .information {
-      display: none;
-    }
-  }
-
-  @media (max-width: 1199px) {
-    .information {
-      display: block;
-    }
-    .information-top {
-      display: block !important;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .information-top {
-      display: none !important;
+      .nav-link.active{
+        color: var(--primary) !important;
+      }
     }
   }
 }
@@ -414,7 +392,8 @@ body {
 }
 
 .about {
-  margin-top: 180px;
+  margin-top: 150px !important;
+  display: block !important;
 }
 
 .whychoose {
@@ -542,14 +521,25 @@ body {
   }
 }
 
+@media (min-width: 1600px) {
+  .hero {
+    height: 800px;
+  }
+}
+
 @media (max-width: 1366px) {
+  .navbar-brand {
+    height: 78px;
+    width: 120px;
+  }
+
   h1 {
     font-size: 1.75rem !important;
   }
 
   .hero {
-    height: 600px;
-    padding: 50px 50px 100px 50px;
+    height: 500px;
+    display: block !important;
   }
 
   .cta-hero {
@@ -564,9 +554,9 @@ body {
     height: 50px;
   }
 
-  .how{
+  .how {
     height: 500px;
-    .how__rocket{
+    .how__rocket {
       justify-content: center !important;
     }
     .how__graph {
@@ -576,6 +566,10 @@ body {
 }
 
 @media (max-width: 1199px) {
+  .information-top {
+    display: block !important;
+  }
+
   .main-navigation .navbar .navbar-nav {
     width: inherit;
     background: var(--light-gray);
@@ -625,13 +619,12 @@ body {
   }
 
   .how {
-    &__graph{
-      img{
+    &__graph {
+      img {
         width: 400px;
       }
     }
-}
-
+  }
 }
 
 @media (max-width: 768px) {
@@ -643,12 +636,12 @@ body {
     }
   }
 
-  .how{
+  .how {
     height: 400px !important;
-    &__rocket{
+    &__rocket {
       display: none;
     }
-    &__graph{
+    &__graph {
       display: none;
     }
   }
@@ -678,95 +671,142 @@ body {
   }
 }
 
-@media (max-width: 414px){
-  .hero{
-    height: 700px
+@media (max-width: 425px) {
+  .main-navigation .navbar .navbar-brand {
+    width: 100px;
+    img {
+      width: 100%;
+    }
   }
 
-  .advertisement__left{
+  .hero {
+    height: 700px;
+  }
+
+  .advertisement__left {
     width: 375px;
     box-shadow: 0px 0px 5px 0px var(--light-pink);
-    h2{
+    h2 {
       font-size: 1.5rem;
     }
   }
 
   .about {
     margin-top: 120px;
-}
-
-.whychoose{
-  padding: 0px !important;
-}
-
-.how{
-  padding: 0px !important;
-  padding-top: 20px !important;
-}
-
-.reviews{
-  padding: 0px !important;
-  min-height: 550px;
-  .review{
-    padding: 20px !important;
   }
-}
+
+  .whychoose {
+    padding: 0px !important;
+  }
+
+  .how {
+    margin-top: 3rem;
+    padding: 0px !important;
+    padding-top: 20px !important;
+    height: 500px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .reviews {
+    padding: 0px !important;
+    min-height: 550px;
+    .review {
+      padding: 20px !important;
+    }
+  }
+
+  .footer{
+    .agree-checkbox{
+      flex-direction: column;
+    justify-content: center;
+    }
+  }
 
 }
 
-@media (max-width: 350px){
-  .advertisement__left{
+@media (max-width: 375px) {
+
+  .hero{
+    .wave, .wave:before, .wave:after{
+      width: 155vw !important;
+    }
+  }
+
+  .advertisement__left {
     width: 300px !important;
   }
+
+  .how{
+    height: 600px !important;
+  }
+
+  .footer{
+    height: 420px !important;
+  }
+
 }
 
-.modal-1-outer{
+@media (max-width: 325px){
+  .hero{
+    .wave, .wave:before, .wave:after{
+      width: 165vw !important;
+    }
+  }
+}
 
-  span{
+// Modal CSS
+.modal-1-outer {
+  span {
     color: white;
   }
 
-  .modal-header{
+  .modal-header {
     border: none !important;
     position: absolute;
     right: 0px;
     top: -5px;
   }
-  .modal-1{
+  .modal-1 {
     width: 500px;
-    &__left{
-      .form-check{
+    &__left {
+      .form-check {
         height: initial !important;
       }
     }
-    &__right{
-      img{
+    &__right {
+      img {
         height: 370px;
       }
     }
   }
 }
 
-
-.modal-2-outer{
-  span{
+.modal-2-outer {
+  span {
     color: white;
   }
 
-  .modal-content{
+  .modal-content {
     border: 2px solid white;
     border-radius: 5px;
-    .modal-header{
+    .modal-header {
       border: none !important;
       position: absolute;
       right: 0px;
       top: -5px;
     }
 
-    input{
+    input {
       border-radius: 50px;
       padding-left: 15px;
     }
+  }
+}
 
+@media (max-width: 768px) {
+  .information-top {
+    display: none !important;
   }
 }

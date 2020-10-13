@@ -19,6 +19,7 @@ body {
   padding: 0px !important;
   margin: 0px !important;
   font-size: 15px;
+  position: relative;
 }
 
 :root {
@@ -80,27 +81,27 @@ body {
 }
 
 .--fs-12 {
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
 }
 
 .--fs-16 {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .--fs-18 {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 }
 
 .--fs-20 {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 .--fs-24 {
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
 }
 
 .--fs-30 {
-  font-size: 1.875rem;
+  font-size: 1.875rem !important;
 }
 
 .--fs-36 {
@@ -108,7 +109,7 @@ body {
 }
 
 .--fs-62 {
-  font-size: 3.875rem;
+  font-size: 3.875rem !important;
 }
 
 .--margin-left-minus-40 {
@@ -229,7 +230,8 @@ body {
 }
 
 .main-navigation .navbar .navbar-brand img {
-  width: 120px;
+  width: 100%;
+  height: 100%;
 }
 
 .main-navigation .navbar .navbar-nav {
@@ -248,25 +250,8 @@ body {
   margin: 0px 15px;
 }
 
-@media screen and (max-width: 1424px) {
-  .main-navigation .information {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  .main-navigation .information {
-    display: block;
-  }
-  .main-navigation .information-top {
-    display: block !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .main-navigation .information-top {
-    display: none !important;
-  }
+.main-navigation .navbar .nav-item .nav-link.active {
+  color: var(--primary) !important;
 }
 
 .hero {
@@ -472,7 +457,8 @@ body {
 }
 
 .about {
-  margin-top: 180px;
+  margin-top: 150px !important;
+  display: block !important;
 }
 
 .whychoose {
@@ -615,13 +601,23 @@ body {
   padding-left: 0px;
 }
 
+@media (min-width: 1600px) {
+  .hero {
+    height: 800px;
+  }
+}
+
 @media (max-width: 1366px) {
+  .navbar-brand {
+    height: 78px;
+    width: 120px;
+  }
   h1 {
     font-size: 1.75rem !important;
   }
   .hero {
-    height: 600px;
-    padding: 50px 50px 100px 50px;
+    height: 500px;
+    display: block !important;
   }
   .cta-hero {
     height: 50px;
@@ -647,6 +643,9 @@ body {
 }
 
 @media (max-width: 1199px) {
+  .information-top {
+    display: block !important;
+  }
   .main-navigation .navbar .navbar-nav {
     width: inherit;
     background: var(--light-gray);
@@ -745,7 +744,13 @@ body {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 425px) {
+  .main-navigation .navbar .navbar-brand {
+    width: 100px;
+  }
+  .main-navigation .navbar .navbar-brand img {
+    width: 100%;
+  }
   .hero {
     height: 700px;
   }
@@ -764,8 +769,20 @@ body {
     padding: 0px !important;
   }
   .how {
+    margin-top: 3rem;
     padding: 0px !important;
     padding-top: 20px !important;
+    height: 500px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .reviews {
     padding: 0px !important;
@@ -774,11 +791,35 @@ body {
   .reviews .review {
     padding: 20px !important;
   }
+  .footer .agree-checkbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
+  .hero .wave, .hero .wave:before, .hero .wave:after {
+    width: 155vw !important;
+  }
   .advertisement__left {
     width: 300px !important;
+  }
+  .how {
+    height: 600px !important;
+  }
+  .footer {
+    height: 420px !important;
+  }
+}
+
+@media (max-width: 325px) {
+  .hero .wave, .hero .wave:before, .hero .wave:after {
+    width: 165vw !important;
   }
 }
 
@@ -824,4 +865,10 @@ body {
 .modal-2-outer .modal-content input {
   border-radius: 50px;
   padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .information-top {
+    display: none !important;
+  }
 }
