@@ -230,7 +230,7 @@ body {
 }
 
 .main-navigation .navbar .navbar-brand img {
-  width: 125px;
+  width: 125px !important;
 }
 
 .main-navigation .navbar .navbar-nav {

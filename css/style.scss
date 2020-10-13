@@ -226,10 +226,9 @@ body {
   top: 0;
   z-index: 3;
   .navbar {
-    // height: 155px;
     .navbar-brand {
       img {
-        width: 125px;
+        width: 125px !important;
       }
     }
     .navbar-nav {
