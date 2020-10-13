@@ -230,7 +230,7 @@ body {
 }
 
 .main-navigation .navbar .navbar-brand img {
-  width: 125px !important;
+  width: 125px;
 }
 
 .main-navigation .navbar .navbar-nav {
@@ -604,6 +604,9 @@ body {
                 Media Queries
 ******************************************************/
 @media (max-width: 1366px) {
+  .navbar-brand img {
+    width: 100px !important;
+  }
   h1 {
     font-size: 1.75rem !important;
   }

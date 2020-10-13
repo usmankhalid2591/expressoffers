@@ -228,7 +228,7 @@ body {
   .navbar {
     .navbar-brand {
       img {
-        width: 125px !important;
+        width: 125px;
       }
     }
     .navbar-nav {
@@ -524,6 +524,12 @@ body {
 ******************************************************/
 
 @media (max-width: 1366px) {
+
+  .navbar-brand {
+    img {
+      width: 100px !important;
+    }
+  }
 
   h1 {
     font-size: 1.75rem !important;
