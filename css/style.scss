@@ -537,7 +537,9 @@ body {
 
   .hero{
     .hero-rocket{
-      width: 300px;
+      img{
+        width: 300px !important;
+      }
     }
   }
 

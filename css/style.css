@@ -612,8 +612,8 @@ body {
   h1 {
     font-size: 1.75rem !important;
   }
-  .hero .hero-rocket {
-    width: 300px;
+  .hero .hero-rocket img {
+    width: 300px !important;
   }
   .cta-hero {
     height: 50px;
