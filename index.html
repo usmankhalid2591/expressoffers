@@ -2,694 +2,947 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css?v=1.0">
 
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="css/animate.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css?v=1.0">
 
-	<!-- Fontawesome Kit -->
-	<script src="js/fontawesome.js"></script>
+    <!-- Fontawesome Kit -->
+    <script src="js/fontawesome.js?v=1.0"></script>
 
-	<!-- Style -->
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css?v=1.0">
 
-	<!-- Slider -->
-	<link rel="stylesheet" href="css/slider.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/slider.css?v=1.0">
 
-	<title>Express Offers</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <title>Express Offers</title>
 </head>
+    
 
-<body data-spy="scroll" data-target=".navbar" data-offset="200">
+<!-- Loader -->
+<div class="loader">
+    <div class="loader-circle position-fixed"></div>
+</div>
 
-	<header data-scroll-header class="main-navigation animated slideInDown">
-		<nav class="navbar navbar-expand-xl navbar-light bg-white shadow">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#hero"><img src="img/logo.png" alt=""></a>
+<body data-spy="scroll" data-target=".navbar" data-offset="200" class="overflow-hidden">
 
-				<div class="d-none information-top">
-					<div class="d-flex flex-column">
-						<p class="--fs-18 m-0 --c-secondary">Get your cash offer today</p>
-						<p class="m-0"><span class="--c-primary --fw-m --fs-18">0808 196 4554</span>
-							<span class="--fs-16 --fw-b --c-secondary">(Freephone)</span></p>
-						<p class="--fs-16 m-0 --c-secondary">Lines open 24 hours a day, 7 days a week</p>
-					</div>
-				</div>
+    <header data-scroll-header="" class="main-navigation animated slideInDown">
+        <nav class="navbar navbar-expand-xl navbar-light bg-white shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#hero"><img src="img/logo.png" alt=""></a>
+
+                <div class="information-top d-none ml-5">
+                    <div class="d-flex flex-column">
+                        <p class="--fs-18 m-0 --c-secondary">Get your cash offer today</p>
+                        <p class="m-0">
+                        <p class="--c-primary --fw-m m-0 --fs-18">
+                            <a href="tel:0808 196 4554" class="click-to-call">0808 196 4554</a>
+                        </p>
+                        <p class="--fs-16 m-0 --fw-b --c-secondary">(Freephone)</p>
+                        </p>
+                        <p class="--fs-16 m-0 --c-secondary">Lines open 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link --fw-m --c-secondary" href="#about">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link --fw-m --c-secondary" href="#whyChoose">Why choose us?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link --fw-m --c-secondary" href="#how">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link --fw-m --c-secondary" href="#program">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link --fw-m --c-secondary" href="#faq">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="getacashoffermainpagebutton0" class="btn --custom-button" href="#">Get a cash offer</a>
+                        </li>
+                        <li class="nav-item m-lg-0">
+                            <div class="information">
+                                <p class="--fs-18 m-0 --c-secondary">Get your cash offer today</p>
+                                <p class="m-0"><span class="--c-primary --fw-m --fs-18"> <a class="click-to-call"
+                                            href="tel:0808 196 4554">0808 196 4554</a> </span>
+                                    <span class="--fs-16 --fw-b --c-secondary">(Freephone)</span></p>
+                                <p class="--fs-16 m-0 --c-secondary">Lines open 24 hours a day, 7 days a week</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+    </header>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="nav navbar-nav ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link --fw-m --c-secondary" href="#about">About us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link --fw-m --c-secondary" href="#whyChoose">Why choose us?</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link --fw-m --c-secondary" href="#how">How it works</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link --fw-m --c-secondary" href="#program">Reviews</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link --fw-m --c-secondary" href="#faq">FAQs</a>
-						</li>
-						<li class="nav-item">
-							<a class="btn --custom-button --fw-b" href="javascript:void(0);">Get a cash offer</a>
-						</li>
-						<li class="nav-item">
-							<div class="information">
-								<p class="--fs-18 m-0 --c-secondary">Get your cash offer today</p>
-								<p class="m-0"><span class="--c-primary --fw-m --fs-18">0808 196 4554</span>
-									<span class="--fs-16 --fw-b --c-secondary">(Freephone)</span></p>
-								<p class="--fs-16 m-0 --c-secondary">Lines open 24 hours a day, 7 days a week</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+    <div class="hero" id="hero">
+        <div class="wave"></div>
 
-	<div class="hero" id="hero">
+        <div class="hero-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="pt-5">
+                            <h1 class="--c-primary --fw-b --fs-36">Hi. We want to buy your home.
+                            </h1>
+                            <h1 class="--c-secondary --fw-b --fs-36">Get your free valuation & cash offer now</h1>
+                            <div class="cta-hero">
+                                <div class="input-group mb-3">
+                                    <input type="text" id="_Postcode"
+                                        class="form-control --bg-light-pink border-0 --fs-16 --c-secondary"
+                                        placeholder="Enter Your Postcode" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2">
+                                    <div class="rotatingloader" id="Newloader"
+                                        style="display: none;position: absolute;left: 400px;top: 9px;"><img
+                                            src="/img/loader.gif" alt=""></div>
+                                    <!-- <div id="postcodeloader" style="cursor: pointer;position: absolute;left: 400px;top: 9px;" class="spinner-border text-light"></div> -->
+                                    <!-- <div style="cursor: pointer; display: block; position: absolute; right:6px; top:11px; z-index: 1" onclick="ResetPostcodeandsearchresults();" id="loading-postcode"></div> -->
+                                    <div class="input-group-append">
+                                        <button
+                                            class="btn d-flex align-items-center justify-content-center --bg-orange --c-white border-0 --fs-16 --fw-b hero-go-button"
+                                            id="button-addon2">GO</button>
+                                    </div>
 
-		<div class="wave"></div>
+                                    <div id="ShowSearchResults" class="SearchResultsMain"
+                                        style="    background: none repeat scroll 0 0 #F7FAFE; border: 1px solid #E5E5E5; border-radius: 5px; display: none; float: left; margin: 10px 0; max-height: 188px; overflow: auto; position: absolute;  top: 40px;">
+                                    </div>
+                                    <div id="SelectedAddress"
+                                        style="background: none repeat scroll 0 0 #73B1EF;border-radius: 5px;float: left;margin: 0;width: 100%;"
+                                        hidden></div>
+                                </div>
+                            </div>
+                            <ul class="hero-list d-flex">
+                                <li class="m-0 ml-2 --fs-16 --c-secondary">Cash Offer</li>
+                                <li class="m-0 ml-2 --fs-16 --c-secondary">Guaranteed Sale</li>
+                                <li class="m-0 ml-2 --fs-16 --c-secondary">Hassle-free</li>
+                            </ul>
+                            <p class="p-3 --c-secondary">We have a liquid, multi-million-pound property fund and can buy
+                                properties
+                                for cash in as little as 7 days. We even have a solution to help you get 100%
+                                market-value quickly.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 d-none d-lg-block">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <img class="img-fluid hero-rocket" src="img/rocket.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="hero-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-12">
-						<div class="pt-0">
-							<h1 class="--c-primary --fw-b --fs-36">Hi. We want to buy your home.
-								<!-- <button type="button" class="btn btn-primary" data-toggle="modal"
-									data-target="#staticBackdrop-1" style="
-    position: absolute;
-    z-index: 99999;
-    top: -50px;
-">
-									every 5 second
-								</button>
-								<button type="button" class="btn btn-primary" data-toggle="modal"
-									data-target="#staticBackdrop-2" style="
-    position: absolute;
-    z-index: 99999;
-    top: -50px;
-    left: 270px;
-">
-									Last step
-								</button> -->
-							</h1>
-							<h1 class="--c-secondary --fw-b --fs-30">Get your free valuation & cash offer now</h1>
-							<div class="cta-hero">
-								<div class="input-group mb-3">
-									<input type="text" class="form-control --bg-light-pink border-0 --fs-16"
-										placeholder="Enter Your Postcode" aria-label="Recipient's username"
-										aria-describedby="button-addon2">
-									<div class="input-group-append">
-										<a href="javascript:void(0);"
-											class="btn d-flex align-items-center justify-content-center --bg-orange --c-white border-0 --fs-16 --fw-b"
-											type="button" id="button-addon2">GO</a>
-									</div>
-								</div>
-							</div>
-							<ul class="hero-list d-flex list-unstyled">
-								<li class="m-0 ml-2 --fs-16">Cash Offer</li>
-								<li class="m-0 ml-2 --fs-16">Guaranteed Sale</li>
-								<li class="m-0 ml-2 --fs-16">Hassle-free</li>
-							</ul>
-							<p class="p-3">We have a liquid, multi-million-pound property fund and can buy properties
-								for cash in as little as 7 days. We even have a solution to help you get 100%
-								market-value quickly.</p>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-12 d-none d-lg-block">
-						<div class="d-flex justify-content-center align-items-center h-100 hero-rocket">
-							<img src="img/rocket.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="position-relative">
+        <div class="advertisement">
+            <div class="advertisement__left --bg-white">
+                <div>
+                    <h2 class="--c-primary --fw-m">Get your cash offer today</h2>
+                    <h2 class="--fw-b --c-secondary"> <a href="tel:0808 196 4554" class="click-to-call">0808 196
+                            4554</a> <sup class="--fs-16">(Freephone)</sup></h2>
+                </div>
+            </div>
+            <div class="advertisement__right --bg-primary">
+                <h2 class="--fw-b --c-white">24 hours a day, 7 days a week</h2>
+            </div>
+        </div>
+    </div>
 
-	<div class="position-relative">
-		<div class="advertisement">
-			<div class="advertisement__left --bg-white">
-				<div>
-					<h2 class="--c-primary --fw-m">Get your cash offer today</h2>
-					<h2 class="--fw-b --c-secondary">0800 196 4554 <sup class="--fs-16">(Freephone)</sup></h2>
-				</div>
-			</div>
-			<div class="advertisement__right --bg-primary">
-				<h2 class="--fw-b --c-white">24 hours a day, 7 days a week</h2>
-			</div>
-		</div>
-	</div>
+    <section class="about" id="about">
+        <div class="container">
+            <h1 class="--fs-62 --fw-b text-center mb-4 --c-secondary">About us</h1>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3 class="--fs-16 --fw-b --c-primary">One of the UK’s leading, largest and most established
+                        property buying companies.
+                    </h3>
+                </div>
+                <div class="col-lg-8">
+                    <p class="--c-secondary">We are an ethical property buying company where our investors have a proven
+                        track record of
+                        buying properties quickly for over 15 years. Every month we help hundreds of homeowners across
+                        England, Scotland, Wales and Northern Ireland.
+                        We assist homeowners of all types of residential properties, at all values and all levels of
+                        selling motivation. We will make a cash offer for properties in all conditions. </p>
+                    <p class="--c-secondary">We have a liquid, multi-million-pound property fund and can buy properties
+                        for cash in as little
+                        as 7 days. Other firms may claim to buy with cash but in reality they will be using finance
+                        which often slows down the process.</p>
+                    <p class="--c-secondary"> We have a number of different solutions to help you sell your property
+                        quickly. We even have a
+                        solution that can help you get 100% market-value.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <a id="getacashoffermainpagebutton1" href="#" class="btn --custom-button --fw-b --fs-16 d-block">Get a
+                    cash offer</a>
+            </div>
+        </div>
+    </section>
 
-	<section class="about" id="about">
-		<div class="container">
-			<h1 class="--fs-62 --fw-b text-center mb-4 --c-secondary">About us</h1>
-			<div class="row">
-				<div class="col-lg-4">
-					<h3 class="--fs-16 --fw-b --c-primary">One of the UK’s leading, largest and most established
-						property buying
-						companies.</h3>
-				</div>
-				<div class="col-lg-8">
-					<p>We are an ethical property buying company where our investors have a proven track record of
-						buying properties quickly for over 15 years. Every month we help hundreds of homeowners across
-						England, Scotland, Wales and Northern Ireland. We assist homeowners of all types of residential
-						properties, at all values and all levels of selling motivation. We will make a cash offer for
-						properties in all conditions. </p>
-					<p>We have a liquid, multi-million-pound property fund and can buy properties for cash in as little
-						as 7 days. Other firms may claim to buy with cash but in reality they will be using finance
-						which often slows down the process.</p>
-					<p> We have a number of different solutions to help you sell your property quickly. We even have a
-						solution that can help you get 100% market-value.</p>
-				</div>
-			</div>
-			<div class="d-flex justify-content-center mt-4">
-				<a href="javascript:void(0);" class="btn --custom-button --fw-b --fs-16 d-block">Get a cash offer</a>
-			</div>
-		</div>
-	</section>
+    <section class="whychoose p-5" id="whyChoose">
+        <div class="container">
+            <h1 class="--fs-62 --fw-b mb-4 --c-secondary">Why choose us?</h1>
+            <ul class="p-0 --c-secondary">
+                <li>We guarantee to make a cash offer for any residential property in the UK
+                </li>
+                <li>We have a liquid, multi-million-pound property fund and can buy properties for cash in as little as
+                    7 days
+                </li>
+                <li>We have options to get you 100% of market-value quickly
+                </li>
+                <li>We help hundreds of homeowners every month to sell their property
+                </li>
+                <li>We will charge you no fees if we buy your property
+                </li>
+                <li>We will cover all survey and legal fees regarding the sale of your property
+                </li>
+                <li>Our investors have an excellent track record of ethically buying properties quickly for over 15
+                    years
+                </li>
+                <li>We provide binding written assurances for your protection
+                </li>
+                <li>No public viewings, no more wasted time, no chains, no stress and no false promises
+                </li>
+                <li>You choose the purchase timeframe that best suits you</li>
+            </ul>
+        </div>
+    </section>
 
-	<section class="whychoose p-5" id="whyChoose">
-		<div class="container">
-			<h1 class="--fs-62 --fw-b mb-4 --c-secondary">Why choose us?</h1>
-			<ul class="p-0 --c-secondary">
-				<li>We guarantee to make a cash offer for any residential property in the UK
-				</li>
-				<li>We have a liquid, multi-million-pound property fund and can buy properties for cash in as little as
-					7 days
-				</li>
-				<li>We have options to get you 100% of market-value quickly
-				</li>
-				<li>We help hundreds of homeowners every month to sell their property
-				</li>
-				<li>We will charge you no fees if we buy your property
-				</li>
-				<li>We will cover all survey and legal fees regarding the sale of your property
-				</li>
-				<li>Our investors have an excellent track record of ethically buying properties quickly for over 15
-					years
-				</li>
-				<li>We provide binding written assurances for your protection
-				</li>
-				<li>No public viewings, no more wasted time, no chains, no stress and no false promises
-				</li>
-				<li>You choose the purchase timeframe that best suits you</li>
-			</ul>
-		</div>
-	</section>
+    <section class="how position-relative p-5" id="how">
+        <h1 class="--fs-62 --fw-b mb-4 text-center --c-primary">How it works?</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="d-lg-flex d-sm-none d-md-none justify-content-end how__rocket">
+                        <img src="img/rocket-alone.png" class="text-left" alt="">
+                    </div>
+                </div>
+                <div class="col-8 ">
+                    <div class="text-white text-center">
+                        <p><strong>Step 1</strong> You provide some details about the property you are selling</p>
+                        <p><strong>Step 2</strong> We will give you a cash offer and details of any additional selling
+                            options</p>
+                        <p><strong>Step 3</strong> Let us get you sold! You can choose the solution that best suits your
+                            needs</p>
+                    </div>
+                    <div class="d-flex justify-content-center position-relative how__button mt-5">
+                        <a id="getacashoffermainpagebutton2" href="#"
+                            class="btn --custom-button --custom-button-white --fw-b --fs-16">Get a cash offer</a>
+                    </div>
+                </div>
+            </div>
 
-	<section class="how position-relative p-5" id="how">
-		<h1 class="--fs-62 --fw-b mb-4 text-center --c-primary">How it works?</h1>
-		<div class="container">
-			<div class="row">
-				<div class="col-2">
-					<div class="d-lg-flex d-sm-none d-md-none justify-content-end how__rocket">
-						<img src="img/rocket-alone.png" class="text-left" alt="">
-					</div>
-				</div>
-				<div class="col-8 ">
-					<div class="text-white">
-						<p><strong>Step 1</strong> You provide some details about the property you are selling</p>
-						<p><strong>Step 2</strong> We will give you a cash offer and details of any additional
-							selling options</p>
-						<p><strong>Step 3</strong> Let us get you sold! You can choose the solution that best suits
-							your needs</p>
-					</div>
-					<div class="d-flex justify-content-center position-relative how__button mt-5">
-						<a href="javascript:void(0);"
-							class="btn --custom-button --custom-button-white --fw-b --fs-16">Get a cash offer</a>
-					</div>
-				</div>
-			</div>
+            <div class="position-absolute how__graph">
+                <img src="img/graph.png" alt="">
+            </div>
 
-			<div class="position-absolute how__graph">
-				<img src="img/graph.png" alt="">
-			</div>
+        </div>
+    </section>
 
-		</div>
-	</section>
+    <section
+        class="section section-inset-2 section-inset-3 bg-default text-center position-relative novi-bg novi-bg-img"
+        id="program">
+        <svg class="wave-light wave-light-reverse-y wave-light-2" width="1920" height="1060" viewBox="0 0 1920 1060"
+            fill="none">
+            <path class="wave-path"
+                d="M1270.8 218.376C1568.83 102.736 1850.63 180.948 2030.21 307.382C2032.51 308.998 2034.48 310.988 2036.1 313.28L2244.6 608.07C2253.3 620.368 2249.27 637.477 2235.62 643.849C2136.91 689.931 1934.93 754.715 1745.59 720.317C1486.28 673.211 1150.28 423.428 797.391 434.116C526.793 442.311 106.516 537.961 -92.8574 590.62C-106.447 594.21 -120.226 585.95 -123.559 572.295L-211.97 210.086C-214.872 198.199 -208.784 185.922 -197.319 181.649C-86.282 140.272 153.264 93.3374 366.435 189.479C649.935 317.339 970.87 334.757 1270.8 218.376Z"
+                fill="#4D4468"></path>
+            <path class="wave-path"
+                d="M772.48 255.118C380.165 103.024 9.24323 206.281 -226.745 372.767C-229.039 374.385 -231.01 376.373 -232.632 378.664L-512.582 774.127C-521.29 786.427 -517.274 803.55 -503.683 810.064C-377.112 870.73 -105.683 960.41 148.442 914.284C489.263 852.422 930.89 524.399 1394.72 538.435C1753.87 549.303 2313.64 677.282 2572.46 745.98C2586.04 749.585 2599.94 741.362 2603.28 727.711L2722.96 237.787C2725.87 225.895 2719.88 213.66 2708.45 209.275C2565.44 154.399 2245.45 89.0608 1961.15 217.17C1588.53 385.08 1166.7 407.953 772.48 255.118Z"
+                fill="#4D4468"></path>
+            <path class="wave-path"
+                d="M1447.25 805.997C1794.64 1025.39 2182.35 991.059 2453.13 870.614C2455.6 869.515 2457.81 868.064 2459.73 866.318L2833.15 525.603C2842.65 516.93 2842.3 503.238 2831.92 495.349C2724.31 413.548 2478 274.243 2215.74 273.626C1867.52 272.805 1356.87 514.147 906.52 416.969C558.455 341.862 42.8667 116.692 -194.437 2.73577C-207.328 -3.45464 -223.54 1.25043 -229.521 12.9186L-466.827 475.879C-471.469 484.935 -468.544 495.538 -459.301 501.375C-333.611 580.741 -34.896 703.74 275.402 629.247C680.162 532.076 1098.27 585.601 1447.25 805.997Z"
+                fill="#4D4468"></path>
+        </svg>
+        <div class="container-md container-fluid">
+            <h1 class="wow fadeInUp --fs-62 --fw-b --c-secondary"
+                style="visibility: visible; animation-name: fadeInUp;">Reviews</h1>
+            <p class="--c-secondary" data-wow-delay=".05s" style="height: 30px;">A few of our customer
+                stories
+            </p>
+            <div class="swiper-container swiper-slider swiper-slider-2 swiper-fix swiper-container-coverflow swiper-container-3d swiper-container-initialized swiper-container-vertical"
+                data-loop="false" data-direction="vertical" data-effect="coverflow" data-centered-slides="true"
+                data-slides-per-view="auto" data-initial-slide="2">
+                <div class="swiper-wrapper"
+                    style="transition-duration: 0ms; transform: translate3d(0px, -585px, 0px); perspective-origin: 825px 50%;">
+                    <div class="swiper-slide"
+                        style="transition-duration: 0ms; transform: translate3d(0px, 560px, -160px) rotateX(0deg) rotateY(0deg); z-index: -1;">
+                        <article class="program">
+                            <div class="row h-100">
+                                <div class="col-12 col-md-3 col-xl-4">
+                                    <div class="slide-data d-flex h-100">
+                                        <div class="reviewstars">
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="--c-secondary review-name">Mr Banks</div>
+                                        <div class="--c-secondary review-location">St Helens</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 col-xl-8">
+                                    <div class="heading-3 --fw-b --fs-18 --c-secondary">Mr Banks says:</div>
+                                    <p class="--fw-r --fs-16 --c-secondary review-text">"First of all we would like to
+                                        say how
+                                        professional
+                                        everything was from start to end. I’ve never slept so soundly having paid off
+                                        all my debts and I’ve never had so much money. I recently went away on holiday
+                                        and didn’t
+                                        have to use my credit card. I’ve already recommended you many times."</p>
+                                </div>
+                            </div>
+                        </article>
 
-	<section
-		class="section section-inset-2 section-inset-3 bg-default text-center position-relative novi-bg novi-bg-img"
-		id="program">
-		<svg class="wave-light wave-light-reverse-y wave-light-2" width="1920" height="1060" viewBox="0 0 1920 1060"
-			fill="none">
-			<path class="wave-path"
-				d="M1270.8 218.376C1568.83 102.736 1850.63 180.948 2030.21 307.382C2032.51 308.998 2034.48 310.988 2036.1 313.28L2244.6 608.07C2253.3 620.368 2249.27 637.477 2235.62 643.849C2136.91 689.931 1934.93 754.715 1745.59 720.317C1486.28 673.211 1150.28 423.428 797.391 434.116C526.793 442.311 106.516 537.961 -92.8574 590.62C-106.447 594.21 -120.226 585.95 -123.559 572.295L-211.97 210.086C-214.872 198.199 -208.784 185.922 -197.319 181.649C-86.282 140.272 153.264 93.3374 366.435 189.479C649.935 317.339 970.87 334.757 1270.8 218.376Z"
-				fill="#4D4468"></path>
-			<path class="wave-path"
-				d="M772.48 255.118C380.165 103.024 9.24323 206.281 -226.745 372.767C-229.039 374.385 -231.01 376.373 -232.632 378.664L-512.582 774.127C-521.29 786.427 -517.274 803.55 -503.683 810.064C-377.112 870.73 -105.683 960.41 148.442 914.284C489.263 852.422 930.89 524.399 1394.72 538.435C1753.87 549.303 2313.64 677.282 2572.46 745.98C2586.04 749.585 2599.94 741.362 2603.28 727.711L2722.96 237.787C2725.87 225.895 2719.88 213.66 2708.45 209.275C2565.44 154.399 2245.45 89.0608 1961.15 217.17C1588.53 385.08 1166.7 407.953 772.48 255.118Z"
-				fill="#4D4468"></path>
-			<path class="wave-path"
-				d="M1447.25 805.997C1794.64 1025.39 2182.35 991.059 2453.13 870.614C2455.6 869.515 2457.81 868.064 2459.73 866.318L2833.15 525.603C2842.65 516.93 2842.3 503.238 2831.92 495.349C2724.31 413.548 2478 274.243 2215.74 273.626C1867.52 272.805 1356.87 514.147 906.52 416.969C558.455 341.862 42.8667 116.692 -194.437 2.73577C-207.328 -3.45464 -223.54 1.25043 -229.521 12.9186L-466.827 475.879C-471.469 484.935 -468.544 495.538 -459.301 501.375C-333.611 580.741 -34.896 703.74 275.402 629.247C680.162 532.076 1098.27 585.601 1447.25 805.997Z"
-				fill="#4D4468"></path>
-		</svg>
-		<div class="container">
-			<h1 class="wow fadeInUp --fs-62" style="visibility: visible; animation-name: fadeInUp;">Reviews</h1>
-			<p class="big offset-top-5 wow fadeInUp" data-wow-delay=".05s"
-				style="visibility: visible; animation-delay: 0.05s; animation-name: fadeInUp;">A few of our customer
-				stories</p>
-			<div class="swiper-container swiper-slider swiper-slider-2 swiper-fix swiper-container-coverflow swiper-container-3d swiper-container-initialized swiper-container-vertical"
-				data-loop="false" data-direction="vertical" data-effect="coverflow" data-centered-slides="true"
-				data-slides-per-view="auto" data-initial-slide="2">
-				<div class="swiper-wrapper"
-					style="transition-duration: 0ms; transform: translate3d(0px, -585px, 0px); perspective-origin: 825px 50%;">
-					<div class="swiper-slide"
-						style="transition-duration: 0ms; transform: translate3d(0px, 560px, -160px) rotateX(0deg) rotateY(0deg); z-index: -1;">
-						<article class="program">
-							<div class="row row-fix">
-								<div class="col-md-4 program-left">
-									<div class="program-info">
-										<div class="heading-4 program-month">September</div>
-										<div class="program-time">St Helens</div>
-									</div>
-								</div>
-								<div class="col-md-8 col-xl-7">
-									<div class="heading-3 program-title --fw-b --fs-18">Mr Banks says:</div>
-									<p class="--fw-r --fs-16">"First of all we would like to say how professional
-										everything
-										was from start to end. I’ve never slept so soundly having paid off all my debts
-										and
-										I’ve never had so much money. I recently went away on holiday and didn’t have to
-										use
-										my credit card. I’ve already
-										recommended you many times."</p>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div class="swiper-slide swiper-slide-prev"
-						style="transition-duration: 0ms; transform: translate3d(0px, 280px, -80px) rotateX(0deg) rotateY(0deg); z-index: 0;">
-						<article class="program">
-							<div class="row row-fix">
-								<div class="col-md-4 program-left">
-									<div class="program-info">
-										<div class="heading-4 program-month">September</div>
-										<div class="program-time">St Helens</div>
-									</div>
-								</div>
-								<div class="col-md-8 col-xl-7">
-									<div class="heading-3 program-title --fw-b --fs-18">Mr Banks says:</div>
-									<p class="--fw-r --fs-16">"First of all we would like to say how professional
-										everything
-										was from start to end. I’ve never slept so soundly having paid off all my debts
-										and
-										I’ve never had so much money. I recently went away on holiday and didn’t have to
-										use
-										my credit card. I’ve already
-										recommended you many times."</p>
-								</div>
-							</div>
-						</article>
-					</div>
-					<div class="swiper-slide swiper-slide-active"
-						style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1;">
-						<article class="program">
-							<div class="row row-fix">
-								<div class="col-md-4 program-left">
-									<div class="program-info">
-										<div class="heading-4 program-month">September</div>
-										<div class="program-time">St Helens</div>
-									</div>
-								</div>
-								<div class="col-md-8 col-xl-7">
-									<div class="heading-3 program-title --fw-b --fs-18">Mr Banks says:</div>
-									<p class="--fw-r --fs-16">"First of all we would like to say how professional
-										everything
-										was from start to end. I’ve never slept so soundly having paid off all my debts
-										and
-										I’ve never had so much money. I recently went away on holiday and didn’t have to
-										use
-										my credit card. I’ve already
-										recommended you many times."</p>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-				<!--Swiper Pagination-->
-				<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
-						class="swiper-pagination-bullet" tabindex="0" role="button"
-						aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0"
-						role="button" aria-label="Go to slide 2"></span><span
-						class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-						aria-label="Go to slide 3"></span></div>
-				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-			</div>
-		</div>
-	</section>
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev"
+                        style="transition-duration: 0ms; transform: translate3d(0px, 280px, -80px) rotateX(0deg) rotateY(0deg); z-index: 0;">
+                        <article class="program">
+                            <div class="row h-100">
+                                <div class="col-12 col-md-3 col-xl-4">
+                                    <div class="slide-data d-flex h-100">
+                                        <div class="reviewstars">
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="--c-secondary review-name">Mrs Allison</div>
+                                        <div class="--c-secondary review-location">Surrey</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 col-xl-8">
+                                    <div class="heading-3 --fw-b --fs-18 --c-secondary">Allison says:</div>
+                                    <p class="--fw-r --fs-16 --c-secondary review-text">"You were all so very friendly
+                                        and willing
+                                        to help in any way. This is very important to me and my family. The whole
+                                        process went so fast
+                                        and I had so little to do, so the stress of having to sell was taken away. So
+                                        for that reason I thank you all again, also Ann-Marie wants to say thank you."
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
 
-	<div class="faq p-5 bg-white" id="faq">
-		<h1 class="--fs-62 --fw-b text-center --c-secondary">FAQs</h1>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active"
+                        style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg); z-index: 1;">
+                        <article class="program">
 
-		<div class="container mt-5">
-			<div class="accordion" id="accordionExample">
-				<div class="card">
-					<div class="card-header" id="headingOne">
-						<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-left --fs-16 --fw-b" type="button"
-								data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-								aria-controls="collapseOne">
-								Q. How quickly can you buy my property?
-							</button>
-						</h2>
-					</div>
+                            <div class="row h-100">
+                                <div class="col-12 col-md-3 col-xl-4">
+                                    <div class="slide-data d-flex h-100">
+                                        <div class="reviewstars">
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                            <i class="fas fa-star" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="--c-secondary review-name">Angela Hutton</div>
+                                        <div class="--c-secondary review-location">Bangor</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 col-xl-8">
+                                    <div class="heading-3 --fw-b --fs-18 --c-secondary">Angela says:</div>
+                                    <p class="--fw-r --fs-16 --c-secondary review-text">"The gentleman who came out
+                                        first was lovely, put my mind
+                                        at ease, slowly going through process, explaining every detail, and tho I have
+                                        ill health he took his time, and was there for me at other end of phone, no
+                                        matter
+                                        what time day, he was great, his agent he passed me onto was brilliant ,from
+                                        very start, no matter how many times I asked anything, he was there with
+                                        answers, most of all kindness, patience with me, as for the ladies
+                                        etc I spoke to on phone were like the guy's, I'd couldn't have got through any
+                                        this without them, myself, I would recommend them 1000percent, the company is
+                                        very very lucky to have them work for them, and I hope
+                                        they appreciate them as much as I do 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟💖 thankyou alone
+                                        doesn't do them justice 💖 X"</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--Swiper Pagination-->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+                        class="swiper-pagination-bullet" tabindex="0" role="button"
+                        aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0"
+                        role="button" aria-label="Go to slide 2"></span><span
+                        class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                        aria-label="Go to slide 3"></span></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+    </section>
 
-					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-						data-parent="#accordionExample">
-						<div class="card-body">
-							A. We have a multi-million-pound property fund and can buy properties for cash in as little
-							as 7 days. We have purchased properties in as little as 24 houses but we can tailor
-							timescales to suit your needs.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingTwo">
-						<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
-								data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-								aria-controls="collapseTwo">
-								Q. Can I trust you to deliver on your promises?
-							</button>
-						</h2>
-					</div>
-					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						<div class="card-body">
-							Yes, our investors have an excellent track record of ethically buying properties quickly for
-							over 15 years. Every month we help hundreds of homeowners across England, Scotland, Wales
-							and Northern Ireland.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingThree">
-						<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
-								data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-								aria-controls="collapseThree">
-								Q. Can you get me full-market value for my home?
-							</button>
-						</h2>
-					</div>
-					<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-						data-parent="#accordionExample">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-							squid.
-							3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-							laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-							coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-							anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-							occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-							heard
-							of them accusamus labore sustainable VHS.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingFour">
-						<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
-								data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
-								aria-controls="collapseFour">
-								Q. What types of properties do you buy? </button>
-						</h2>
-					</div>
+    <div class="faq p-5 bg-white" id="faq">
+        <h1 class="--fs-62 --fw-b text-center --c-secondary">FAQs</h1>
 
-					<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-						data-parent="#accordionExample">
-						<div class="card-body">
-							A. We have a multi-million-pound property fund and can buy properties for cash in as little
-							as 7 days. We have purchased properties in as little as 24 houses but we can tailor
-							timescales to suit your needs.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingFive">
-						<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
-								data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
-								aria-controls="collapseTwo">
-								Q. My home is currently in very poor condition and needs a lot of work. Are you still
-								interested?
-							</button>
-						</h2>
-					</div>
-					<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-						data-parent="#accordionExample">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-							squid.
-							3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-							laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-							coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-							anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-							occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-							heard
-							of them accusamus labore sustainable VHS.
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header" id="headingSix">
-						<h2 class="mb-0">
-							<button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
-								data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
-								aria-controls="collapseThree">
-								Q. What fees will I have to pay?
-							</button>
-						</h2>
-					</div>
-					<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-						<div class="card-body">
-							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-							squid.
-							3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-							laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-							coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes
-							anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-							occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
-							heard
-							of them accusamus labore sustainable VHS.
-						</div>
-					</div>
-				</div>
+        <div class="container mt-5">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left --fs-16 --fw-b" type="button"
+                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Q. How quickly can you buy my property?
+                            </button>
+                        </h2>
+                    </div>
 
-			</div>
-		</div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            A. We have a multi-million-pound property fund and can buy properties for cash in as little
+                            as 7 days. We have purchased properties in as little as 24 houses but we can tailor
+                            timescales to suit your needs.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Q. Can I trust you to deliver on your promises?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A. Yes, our investors have an excellent track record of ethically buying properties quickly
+                            for over 15 years. Every month we help hundreds of homeowners across England, Scotland,
+                            Wales and Northern Ireland.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Q. Can you get me full-market value for my home?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            A. Yes, we have a number of solutions to help you sell your property quickly. One of those
+                            options can help you get 100% market-value fast.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
+                                aria-controls="collapseFour">
+                                Q. What types of properties do you buy? </button>
+                        </h2>
+                    </div>
 
-	</div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            A. We are interested buying any type of residential property across England, Scotland, Wales
+                            and Northern Ireland.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Q. My home is currently in very poor condition and needs a lot of work. Are you still
+                                interested?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            A. Yes, we guarantee to make a cash offer for any residential property in the UK.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left --fs-16 --fw-b collapsed" type="button"
+                                data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Q. What fees will I have to pay?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            A. If we buy your property we will charge you no fees for our services. We will even cover
+                            survey and legal fees regarding the sale of the property.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div class="contact mt-5 p-5 --bg-primary">
-		<div class="container">
-			<div class="row contact__form-outer h-100">
-				<div class="col-lg-5 col-md-12">
-					<h1 class="--fs-36 --fw-b mb-4 --c-secondary">Get your free valuation & cash offer now</h1>
-					<p class="--c-white --fw-m">
-						Enter your details or call now on <br>
-						0808 196 4554 (Freephone) <br>
-						Lines open 24 hours a day, 7 days a week
-					</p>
-				</div>
-				<div class="col-lg-7 col-md-12">
-					<div class="position-relative">
-						<div class="contact__form --bg-white position-absolute p-5 w-100">
+    <div class="contact mt-5 p-5 --bg-primary" id="contactUs">
+        <div class="container">
+            <div class="row contact__form-outer h-100">
+                <div class="col-lg-5 col-md-12">
+                    <h1 class="--fs-36 --fw-b mb-4 --c-secondary">Get your free valuation & cash offer now</h1>
+                    <p class="--c-white --fw-m">
+                        Enter your details or call now on <br> <a href="tel:0808 196 4554" class="click-to-call">0808
+                            196 4554</a> (Freephone) <br> Lines open 24 hours a day,
+                        7 days a week
+                    </p>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="position-relative">
+                        <div class="contact__form --bg-white position-absolute p-5 w-100">
 
-							<div class="input-group mb-3">
-								<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-									placeholder="Full name*" aria-label="Recipient's username"
-									aria-describedby="button-addon2">
-							</div>
-							<div class="input-group mb-3">
-								<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-									placeholder="Enter postcode*" aria-label="Recipient's username"
-									aria-describedby="button-addon2">
-							</div>
-							<div class="input-group mb-3">
-								<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-									placeholder="Telephone (ideally mobile)*" aria-label="Recipient's username"
-									aria-describedby="button-addon2">
-							</div>
-							<div class="input-group mb-3">
-								<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-									placeholder="Email address*" aria-label="Recipient's username"
-									aria-describedby="button-addon2">
-							</div>
+                            <form method="POST" onsubmit="<return ValidateUserInformation();"
+                                action="schedule_appointment.php">
+                                <div class="input-group mb-3">
+                                    <input type="text" name="fullname"
+                                        class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                        placeholder="Full name*" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" id="postcode1" name="postcode"
+                                        class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                        placeholder="Enter postcode*" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2" style="border-radius: 50px !important;"
+                                        required>
 
-							<div class="form-check">
-								<label class="container --fs-16 agree-checkbox --c-secondary"> I agree to the <a
-										href="privacy.html" class="ml-1 underlined-privacy"> Privacy Policy</a>
-									<input type="checkbox" checked="checked">
-									<span class="checkmark"></span>
-								</label>
-							</div>
+                                </div>
+                                <img style="display: none;" id="webformloader"
+                                    src="https://expresspg.co.uk/expressoffers.today/img/loader.gif" alt="">
 
-							<div class="d-flex align-items-end h-100">
-								<a href="javascript:void(0);" class="btn --custom-button --fw-b --fs-16 d-block">Get a
-									cash offer!</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                                <div class="input-group mb-3">
+                                    <select type="text" id="address1" name="address"
+                                        class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                        placeholder="Enter Address*" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2" required hidden></select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="text" name="mobilenumber"
+                                        class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                        placeholder="Telephone (ideally mobile)*" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2" pattern="^(?:07)(?:\d\s?){9,10}$" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input type="email" name="email"
+                                        class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                        placeholder="Email address*" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2" required>
+                                </div>
 
-	<footer class="footer p-5">
-		<p class="--c-secondary">Express Offers - Head Office: St George's House, 56 Peter Street, Manchester, M2 3NQ -
-			Company No: 08768424</p>
-	</footer>
+                                <label class=" container --fs-16 agree-checkbox --c-secondary" style="
+                                             left: 50px !important;
+                                             padding-left: 50px;
+                                            padding-bottom: 10px;
+                                            "> I agree to the <a href="privacy.html" target="_blank"
+                                        class="ml-1 underlined-privacy">
+                                        Privacy Policy</a>
+                                    <input type="checkbox" checked="checked" required="required" style="
+                                                    left: 64px !important;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    height: 20px;
+                                                    width: 20px;
+                                                     background-color: #fff;
+                                                     border: 2px solid var(--primary);
+                                                     border-radius: 7px;
+                                                    ">
+                                    <span class="checkmark"></span>
+                                </label>
 
-	<!-- Modals -->
+                                <!-- <div class="form-check"> 
+                                        <label class=" container --fs-16 agree-checkbox --c-secondary"> I agree to the <a
+                                                href="privacy.html" target="_blank" class="ml-1 underlined-privacy">
+                                                Privacy Policy</a>
+                                            <input  type="checkbox" checked="checked" required="required">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div> -->
 
-	<!-- Every 5 second modal -->
-	<div class="modal-1-outer modal fade" id="staticBackdrop-1" data-backdrop="static" data-keyboard="false"
-		tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<i class="fa fa-close"></i>
-					</button>
-				</div>
-				<div class="modal-1 bg-white d-flex flex-wrap">
-					<div class="modal-1__left d-flex flex-column justify-content-around --w-65 p-3">
-						<h4 class="--fs-16 --fw-b --c-secondary">Get your free valuation and</h4>
-						<h3 class="--fs-16 --fw-b --c-primary">cash offer now</h3>
-						<div class="input-group mb-2">
-							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-								placeholder="Full name*" aria-label="Recipient's username"
-								aria-describedby="button-addon2">
-						</div>
-						<div class="input-group mb-2">
-							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-								placeholder="Enter postcode*" aria-label="Recipient's username"
-								aria-describedby="button-addon2">
-						</div>
-						<div class="input-group mb-2">
-							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-								placeholder="Telephone (ideally mobile)*" aria-label="Recipient's username"
-								aria-describedby="button-addon2">
-						</div>
-						<div class="input-group mb-2">
-							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-								placeholder="Email address*" aria-label="Recipient's username"
-								aria-describedby="button-addon2">
-						</div>
 
-						<a href="javascript:void(0);"
-							class="btn --custom-button --bg-orange --fw-b --fs-16 d-block mb-2">Get a cash offer!</a>
+                                <div class="d-flex align-items-end h-100">
+                                    <!-- <a href="javascript:void(0);" class="btn --custom-button --fw-b --fs-16 d-block">Get a
+										cash offer!</a> -->
+                                    <button type="submit" id="getacashoffer1"
+                                        class="btn --custom-button --fw-b --fs-16 d-block">Get a cash
+                                        offer!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
-						<div class="form-check">
-							<label class="container mb-0 --fs-16 agree-checkbox --c-secondary"> I agree to the <a
-									href="privacy.html" class="ml-1 underlined-privacy"> Privacy Policy</a>
-								<input type="checkbox" checked="checked">
-								<span class="checkmark"></span>
-							</label>
-						</div>
-					</div>
-					<div class="modal-1__right --w-35">
-						<img class="img-fluid" src="img/modal-1-bg.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <footer class="footer p-5" id="footer">
+        <p class="--c-secondary">Express Offers - Head Office: St George's House, 56 Peter Street, Manchester, M2 3NQ -
+            Company No: 08768424</p>
+    </footer>
 
-	<!-- Every 5 second modal -->
-	<div class="modal-2-outer modal fade" id="staticBackdrop-2" data-backdrop="static" data-keyboard="false"
-		tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<i class="fa fa-close"></i>
-					</button>
-				</div>
-				<div class="modal-2 bg-white">
-					<div class="--bg-primary d-flex flex-column justify-content-around p-5">
-						<h4 class="--fs-30 --c-white">Last step!</h4>
-						<h3 class="--fs-16 --c-white"> Enter your details below for your free valuation and offer.</h3>
-						<div class="input-group mb-2">
-							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-								placeholder="Full name*" aria-label="Recipient's username"
-								aria-describedby="button-addon2">
-						</div>
-						<div class="input-group mb-2">
-							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-								placeholder="Enter postcode*" aria-label="Recipient's username"
-								aria-describedby="button-addon2">
-						</div>
-						<div class="input-group mb-2">
-							<input type="text" class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
-								placeholder="Telephone (ideally mobile)*" aria-label="Recipient's username"
-								aria-describedby="button-addon2">
-						</div>
-						<div class="form-check">
-							<label class="container mb-0 --fs-16 agree-checkbox --c-white"> I agree to the Privacy
-								Policy</a>
-								<input type="checkbox" checked="checked">
-								<span class="checkmark"></span>
-							</label>
-						</div>
+    <!-- Modals -->
 
-						<div class="d-flex justify-content-end">
-							<a href="javascript:void(0);"
-								class="btn --custom-button --bg-orange --fw-b --fs-16 d-block mb-2">Get a cash
-								offer!</a>
-						</div>
+    <!-- Every 5 second modal -->
+    <div class="modal-1-outer modal fade p-0" id="modaleveryfiveseconds" data-backdrop="static" data-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <div class="modal-1 bg-white d-flex flex-wrap">
+                    <div class="modal-1__left d-flex flex-column justify-content-around --w-65 p-3">
+                        <h4 class="--fs-16 --fw-b --c-secondary">Get your free valuation and</h4>
+                        <h3 class="--fs-16 --fw-b --c-primary">cash offer now</h3>
+                        <form method="POST" onsubmit="<return ValidateUserInformation();"
+                            action="schedule_appointment.php">
+                            <div class="input-group mb-2">
+                                <input type="text" id="fullname2" name="fullname"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Full name*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" required>
+                            </div>
 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            <div class="input-group mb-2">
+                                <input type="text" id="postcode" name="postcode"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Enter postcode*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" required>
+                            </div>
+                            <img style="display: none;" id="webformloaderfiveseconds"
+                                src="https://expresspg.co.uk/expressoffers.today/img/loader.gif" alt="">
+                            <div class="input-group mb-2">
+                                <select type="text" id="addressfiveseconds" name="address"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Full name*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" required hidden></select>
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="text" id="mobilenumber2" name="mobilenumber"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Telephone (ideally mobile)*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" pattern="^(?:07)(?:\d\s?){9,10}$" required>
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="email" id="email2" name="email"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Email address*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" required>
+                            </div>
 
-	<!-- Script tags -->
-	<script src="js/core.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/script.js"></script>
 
-	<!-- Smooth Scroll Jquery -->
-	<script>
-		$('.navbar a').on('click', function (e) {
-			if (this.hash !== '') {
-				e.preventDefault();
+                            <button type="submit" href="javascript:void(0);"
+                                class="btn --custom-button --bg-orange --fw-b --fs-16 d-block mb-2">Get a cash
+                                offer!
+                            </button>
+                            <!-- <span class="terms">
+                                <div class="form-check">
+                                    <label class="container mb-0 --fs-16 agree-checkbox --c-secondary"> I agree to the
+                                        <a href="privacy.html" target="_blank" class="ml-1 underlined-privacy"><u>
+                                                Privacy Policy</u></a>
+                                        <input type="checkbox" checked="checked" oninvalid="setCustomValidity('You must agree to the terms &amp; conditions and privacy policy')" onchange="try {
+                                            setCustomValidity('')
+                                        } catch (e) {
+                                        }" required>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </span> -->
+                            <label class=" container --fs-16 agree-checkbox --c-secondary" style="
+                                             left: 48px !important;
+                                             padding-left: 32px;
+                                             padding-bottom: 0px;
+                                            "> I agree to the <a href="privacy.html" target="_blank"
+                                    class="ml-1 underlined-privacy">
+                                    Privacy Policy</a>
+                                <input type="checkbox" checked="checked" required="required" style="
+                                                    left: 20px !important;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    height: 20px;
+                                                    width: 20px;
+                                                    background-color: #fff;
+                                                    border: 2px solid var(--primary);
+                                                    border-radius: 7px;
+                                                    ">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="callus --c-secondary">
+                                Or, call us now <span><a href="tel:0808 196 4554" class="click-to-call">0808 196
+                                        4554</a></span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-1__right --w-35">
+                        <img class="img-fluid w-100" src="img/modal-1-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-				const hash = this.hash;
 
-				$('html, body').animate({
-					scrollTop: $(hash).offset().top - 110
-				}, 800);
-			};
-		});
+    <!-- Every 5 second modal -->
+    <div class="modal-2-outer p-0 modal fade" id="LastStepModal" data-backdrop="static" data-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-close"></i>
+                    </button>
+                </div>
+                <div class="modal-2 bg-white">
+                    <div class="--bg-primary d-flex flex-column justify-content-around p-5">
+                        <h4 class="--fs-30 --c-white">Last step!</h4>
+                        <h3 class="--fs-16 --c-white"> Enter your details below for your free valuation and offer.</h3>
+                        <form method="POST" onsubmit="<return ValidateUserInformation();"
+                            action="schedule_appointment.php">
+                            <div class="input-group mb-2">
+                                <input type="text" id="fullname3" name="fullname"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Full name*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" required>
+                            </div>
 
-		let intViewportHeight = window.innerHeight;
-		let headerHeight = document.querySelector('header').offsetHeight;
-		let bannerHeight = document.querySelector('.advertisement').offsetHeight / 2;
-		let finalSubtractionNumber = headerHeight + bannerHeight;
+                            <div class="input-group mb-2">
+                                <input type="text" id="postcodeonclick" name="postcode"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Enter postcode*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" required>
+                            </div>
+                            <img style="display: none;" id="webformloaderonclick"
+                                src="https://expresspg.co.uk/expressoffers.today/img/loader.gif" alt="">
+                            <div class="input-group mb-2">
+                                <input type="text" id="addressonclick" name="address"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Address*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" hidden>
+                                <!-- <select type="text" id="addressonclickselect" name="address" class="form-control --bg-light-gray --c-secondary border-0 --fs-16" placeholder="Address*" aria-label="Recipient's username" aria-describedby="button-addon2" required hidden></select> -->
+                            </div>
+                            <div class="input-group mb-2">
+                                <!-- <input type="text" id="addressonclick" name="address" class="form-control --bg-light-gray --c-secondary border-0 --fs-16" placeholder="Address*" aria-label="Recipient's username" aria-describedby="button-addon2" required hidden> -->
+                                <select type="text" id="addressonclickselect" name="address"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Address*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" hidden required></select>
+                            </div>
 
-		document.querySelector('.hero').style.height = (intViewportHeight - finalSubtractionNumber) + 'px';
+                            <div class="input-group mb-2">
+                                <input type="text" id="mobilenumber3" name="mobilenumber"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Telephone (ideally mobile)*" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2" pattern="^(?:07)(?:\d\s?){9,10}$" required>
+                            </div>
+                            <div class="input-group mb-2">
+                                <input type="email" id="email3" name="email"
+                                    class="form-control --bg-light-gray --c-secondary border-0 --fs-16"
+                                    placeholder="Email" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2"
+                                    oninvalid="setCustomValidity('You must agree to the terms &amp; conditions and privacy policy')"
+                                    required>
+                            </div>
 
-	</script>
+                            <!-- <span class="terms">
+                                <div class="form-check">
+                                    <label class="container mb-0 --fs-16 agree-checkbox --c-white"> I agree to the <a
+                                            href="privacy.html" target="_blank" class="ml-1 underlined-privacy"><u>
+                                                Privacy Policy</u></a>
+                                        <input class="form-control" type="checkbox" checked="checked" oninvalid="setCustomValidity('You must agree to the terms &amp; conditions and privacy policy')" onchange="try {
+                                            setCustomValidity('')
+                                        } catch (e) {
+                                        }" required>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </span> -->
+
+                            <label class=" container --fs-16 agree-checkbox --c-secondary" style="
+                                             left: 50px !important;
+                                             padding-left: 40px;
+                                             padding-bottom: 10px;
+                                            "> I agree to the <a href="privacy.html" target="_blank"
+                                    class="ml-1 underlined-privacy">
+                                    Privacy Policy</a>
+                                <input type="checkbox" checked="checked" required="required" style="
+                                                    left: 54px !important;
+                                                    position: absolute;
+                                                    left: 0;
+                                                    height: 20px;
+                                                    width: 20px;
+                                                    background-color: #fff;
+                                                    border: 2px solid var(--primary);
+                                                    border-radius: 7px;
+                                                    ">
+                                <span class="checkmark"></span>
+                            </label>
+
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" id="getacashoffer"
+                                    class="btn --custom-button --bg-orange --fw-b --fs-16 d-block mb-2">Get a cash
+                                    offer!</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Script tags -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="js/core.min.js?v=1.0"></script>
+    <script src="js/bootstrap.js?v=1.0"></script>
+    <script src="js/popper.js?v=1.0"></script>
+    <script src="js/script.js?v=1.0"></script>
+    <script src="js/custom.js?v=1.0"></script>
+
+
+
+    <!-- Smooth Scroll Jquery -->
+    <script>
+        $('.navbar a').on('click', function (e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 110
+                }, 800);
+            };
+        });
+
+        // Code to set the hero height
+        let intViewportHeight = window.innerHeight;
+        let headerHeight = document.querySelector('header').offsetHeight;
+        let bannerHeight = document.querySelector('.advertisement').offsetHeight / 2;
+        let finalSubtractionNumber = headerHeight + bannerHeight;
+
+        document.querySelector('.hero').style.height = (intViewportHeight - finalSubtractionNumber) + 'px';
+
+        let dropDownHeight = document.querySelector('.cta-hero').offsetHeight;
+
+        document.querySelector('.SearchResultsMain').style.top = dropDownHeight + 'px';
+
+        // Modal Width Changer
+        if (window.innerWidth < 1367) {
+            document.querySelector('.modal-dialog').classList.remove('modal-lg');
+        }
+
+        // Loader till page loads
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".loader").delay(3000).fadeOut('slow');
+            setTimeout(function(){
+                $('body').removeClass('overflow-hidden');
+            }, 3000);
+        });
+
+        
+
+
+
+    </script>
+
+    <!-- Facebook Pixel Code -->
+
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+
+            'https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '3349896021746630');
+
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=3349896021746630&ev=PageView&noscript=1" /></noscript>
+
+    <!-- End Facebook Pixel Code -->
+
+    <!--Start Cookie Script-->
+
+    <script type="text/javascript" charset="UTF-8"
+        src="//cdn.cookie-script.com/s/1e4a33f3c4ca530d954972f85b76604c.js"></script>
+
+    <!--End Cookie Script-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-236370-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-236370-4');
+    </script>
 
 </body>
 

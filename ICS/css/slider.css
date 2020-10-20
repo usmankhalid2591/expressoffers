@@ -12215,8 +12215,11 @@ button.swiper-pagination-bullet {
 .swiper-slider-2 .program {
 	display: flex;
 	align-items: center;
-	height: 320px;
-	padding: 30px !important;
+	height: 330px;
+}
+
+.swiper-slider-2 .program .row {
+	width: 100%;
 }
 
 @media (max-width: 479px) {
@@ -12229,5 +12232,21 @@ button.swiper-pagination-bullet {
 		text-overflow: ellipsis;
 		white-space: nowrap;
 		max-width: 100%;
+	}
+}
+
+*+.swiper-slider-2 {
+	margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+	*+.swiper-slider-2 {
+		margin-top: 55px;
+	}
+}
+
+@media (min-width: 1200px) {
+	*+.swiper-slider-2 {
+		margin-top: 72px;
 	}
 }

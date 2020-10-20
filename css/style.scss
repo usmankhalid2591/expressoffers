@@ -1,8 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
+// Loader
 
+.loader{
+  background: white;
+  position: fixed !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999999;
+  .loader-circle {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #e00273;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 input:focus,
@@ -18,6 +55,12 @@ body {
   margin: 0px !important;
   font-size: 15px;
   position: relative;
+
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform:translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+
 }
 
 // Colors
@@ -124,6 +167,10 @@ body {
   width: 65%;
 }
 
+p{
+  margin-bottom: 0px !important;
+}
+
 /******************************************
             Navigation bar CSS
 *******************************************/
@@ -131,7 +178,6 @@ body {
 .form-check {
   height: 52px !important;
   padding: 0px;
-
   .container {
     display: flex;
     align-items: center;
@@ -144,7 +190,6 @@ body {
     -ms-user-select: none;
     user-select: none;
   }
-
   /* Hide the browser's default checkbox */
   .container input {
     position: absolute;
@@ -153,7 +198,6 @@ body {
     height: 0;
     width: 0;
   }
-
   /* Create a custom checkbox */
   .checkmark {
     position: absolute;
@@ -164,24 +208,20 @@ body {
     border: 2px solid var(--primary);
     border-radius: 7px;
   }
-
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
     background-color: var(--primary);
   }
-
   /* Create the checkmark/indicator (hidden when not checked) */
   .checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
-
   /* Show the checkmark when checked */
   .container input:checked ~ .checkmark:after {
     display: block;
   }
-
   /* Style the checkmark/indicator */
   .container .checkmark:after {
     left: 5px;
@@ -221,10 +261,11 @@ body {
 }
 
 .main-navigation {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 4;
   .navbar {
     .navbar-brand {
       img {
@@ -238,8 +279,7 @@ body {
       display: flex;
       align-items: center;
       margin: 0px 15px;
-
-      .nav-link.active{
+      .nav-link.active {
         color: var(--primary) !important;
       }
     }
@@ -248,12 +288,20 @@ body {
 
 .hero {
   position: relative;
-  min-height: 500px !important;
+  height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
+  padding-bottom: 75px;
+  .hero-rocket{
+    width: 400px;
+  }
+  .hero-go-button{
+    width: 100px;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+  }
   .wave {
     position: absolute;
     width: 150vw !important;
@@ -265,7 +313,6 @@ body {
     background-size: cover;
     animation: animate-wave-1 8s linear infinite;
   }
-
   .wave:before {
     content: "";
     position: absolute;
@@ -278,7 +325,6 @@ body {
     background-size: cover;
     animation: animate-wave-2 12s linear infinite;
   }
-
   .wave:after {
     content: "";
     position: absolute;
@@ -291,7 +337,6 @@ body {
     background-size: cover;
     animation: animate-wave-3 15s linear infinite;
   }
-
   @keyframes animate-wave-1 {
     0% {
       background-position: 0px;
@@ -303,7 +348,6 @@ body {
       background-position: 0px;
     }
   }
-
   @keyframes animate-wave-2 {
     0% {
       background-position: 0px;
@@ -315,7 +359,6 @@ body {
       background-position: 0px;
     }
   }
-
   @keyframes animate-wave-3 {
     0% {
       background-position: 0px;
@@ -327,36 +370,40 @@ body {
       background-position: 0px;
     }
   }
-
   .hero-content {
     .cta-hero {
       .input-group {
         height: 64px;
       }
-
       input {
         height: 64px;
         border-radius: 10px 0px 0px 10px;
         padding-left: 25px;
       }
-
       a {
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 10px 10px 0px !important;
         width: 100px;
       }
-
       a:hover {
         background-color: var(--primary);
       }
-
       input:focus {
         background-color: var(--light-pink) !important;
       }
     }
-
     .hero-list {
-      list-style-image: url(../img/tick.png);
-      list-style-position: inside;
+      list-style: none;
+      padding: 0px;
+      margin-top: 60px;
+      li::before{
+        content: '';
+        display: inline-block;
+        height: 40px;
+        width: 60px;
+        background-image: url(../img/tick.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
     }
   }
 }
@@ -371,7 +418,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   &__left {
     width: 490px;
     height: 180px;
@@ -379,7 +425,6 @@ body {
     align-items: center;
     justify-content: center;
   }
-
   &__right {
     width: 490px;
     height: 180px;
@@ -406,11 +451,9 @@ body {
   background: url(../img/how-bg.png);
   background-size: cover;
   height: 661px;
-
   &__button {
     z-index: 1;
   }
-
   &__graph {
     bottom: 10px;
     right: 400px;
@@ -424,7 +467,6 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-
   .review {
     background-color: var(--white);
   }
@@ -434,7 +476,6 @@ body {
   .accordion {
     box-shadow: 0px 0px 15px 1px #ccc;
   }
-
   .card-header {
     background-color: var(--white);
     border-bottom: none;
@@ -448,7 +489,6 @@ body {
     padding-top: 0px;
     padding-left: calc(1.25rem + 12px);
   }
-
   .accordion .card-header button.collapsed:after {
     font-family: "FontAwesome";
     content: "\f078";
@@ -470,11 +510,9 @@ body {
 
 .contact {
   height: 471px;
-
   &__form-outer {
     margin-top: 100px;
   }
-
   &__form {
     box-shadow: 0px 0px 20px 1px #858585;
     input {
@@ -482,12 +520,10 @@ body {
       border-radius: 50px;
       padding-left: 30px;
     }
-
     input:focus {
       color: var(--secondary) !important;
       background-color: var(--light-gray) !important;
     }
-
     .agree-checkbox {
       .underlined-privacy {
         text-decoration: underline !important;
@@ -519,30 +555,33 @@ body {
   }
 }
 
-/******************************************************
-                Media Queries
-******************************************************/
+@media (min-width: 1600px) {
+  .hero {
+    height: 800px;
+    padding-bottom: 90px !important;
+    .hero-rocket {
+      width: 425px;
+    }
+  }
+}
 
 @media (max-width: 1366px) {
-
   .navbar-brand {
     img {
       width: 100px !important;
     }
   }
-
   h1 {
     font-size: 1.75rem !important;
   }
-
-  .hero{
-    .hero-rocket{
-      img{
-        width: 300px;
-      }
+  .hero {
+    min-height: 500px;
+    display: block !important;
+    padding-bottom: 50px;
+    .hero-rocket {
+      width: 370px !important;
     }
   }
-
   .cta-hero {
     height: 50px;
     margin-bottom: 15px;
@@ -550,11 +589,9 @@ body {
   .cta-hero input {
     height: 50px !important;
   }
-
   .cta-hero .btn {
     height: 50px;
   }
-
   .how {
     height: 500px;
     .how__rocket {
@@ -567,10 +604,26 @@ body {
 }
 
 @media (max-width: 1199px) {
-  .information-top {
-    display: block !important;
+
+  .navbar{
+    .container-fluid{
+      .information-top{
+        display: block !important;
+        margin-left: 0px !important;
+      }
+    }
   }
 
+  .navbar-toggler{
+    margin-left: auto !important;
+  }
+
+  .information-top {
+    display: block !important;
+    p:nth-last-of-type(1){
+      display: none;
+    }
+  }
   .main-navigation .navbar .navbar-nav {
     width: inherit;
     background: var(--light-gray);
@@ -582,14 +635,19 @@ body {
     margin: 5px 0px;
   }
   .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
-    display: none;
+    .information{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      p:nth-last-of-type(1){
+        display: none;
+      }
+    }
   }
-
   .how__graph {
     bottom: 10px;
     right: 50px;
   }
-
   .how__rocket {
     justify-content: center !important;
   }
@@ -599,17 +657,14 @@ body {
   .advertisement__right {
     display: none;
   }
-
   .contact__form-outer {
     margin-top: 50px;
   }
-
   .contact__form {
     right: -50px;
     bottom: -420px;
     width: 380px !important;
   }
-
   footer {
     height: 255px !important;
     display: block !important;
@@ -618,7 +673,6 @@ body {
       width: 50%;
     }
   }
-
   .how {
     &__graph {
       img {
@@ -629,14 +683,30 @@ body {
 }
 
 @media (max-width: 768px) {
-  .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
-    display: block;
-    justify-content: center;
-    .information {
-      text-align: center;
+
+  .hero-list {
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+    li::before{
+      content: '';
+      display: inline-block;
+      height: 19px !important;
+      width: 28px !important;
+      background-image: url(../img/tick.png);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 
+  h1{
+    font-size: 1.25rem !important;
+  }
+
+  .main-navigation .navbar .navbar-nav li:nth-last-of-type(1) {
+    display: block;
+    justify-content: center;
+  }
   .how {
     height: 400px !important;
     &__rocket {
@@ -646,11 +716,9 @@ body {
       display: none;
     }
   }
-
   .reviews {
     min-height: 750px;
   }
-
   .contact {
     height: 600px;
     &__form {
@@ -659,13 +727,11 @@ body {
       width: 100% !important;
     }
   }
-
   .footer {
     height: 350px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: flex-end !important;
-
     p {
       width: 100% !important;
     }
@@ -673,10 +739,32 @@ body {
 }
 
 @media (max-width: 425px) {
+
+  .navbar{
+    .container-fluid{
+      .information-top{
+        p{
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+
   .main-navigation .navbar .navbar-brand {
     width: 100px;
     img {
       width: 100%;
+    }
+  }
+  .hero {
+    height: 700px;
+    .hero-list{
+      li{
+        font-size: 13px !important;
+      }
+    }
+    p{
+      font-size: 13px;
     }
   }
   .advertisement__left {
@@ -686,15 +774,12 @@ body {
       font-size: 1.5rem;
     }
   }
-
   .about {
     margin-top: 120px;
   }
-
   .whychoose {
     padding: 0px !important;
   }
-
   .how {
     margin-top: 3rem;
     padding: 0px !important;
@@ -704,7 +789,6 @@ body {
     justify-content: center;
     flex-direction: column;
   }
-
   .reviews {
     padding: 0px !important;
     min-height: 550px;
@@ -712,41 +796,53 @@ body {
       padding: 20px !important;
     }
   }
-
-  .footer{
-    .agree-checkbox{
+  .footer {
+    .agree-checkbox {
       flex-direction: column;
-    justify-content: center;
+      justify-content: center;
+    }
+  }
+
+  .modal-1-outer{
+    .modal-1__right{
+      display: none;
+    }
+    .modal-1__left{
+      width: 100%;
+      background-image: url(../img/modal-1-bg.png);
+      background-size: cover;
+      label, h4, .callus{
+        color: white !important;
+      }
     }
   }
 
 }
 
 @media (max-width: 375px) {
-
-  .hero{
-    .wave, .wave:before, .wave:after{
+  .hero {
+    .wave,
+    .wave:before,
+    .wave:after {
       width: 155vw !important;
     }
   }
-
   .advertisement__left {
     width: 300px !important;
   }
-
-  .how{
+  .how {
     height: 600px !important;
   }
-
-  .footer{
+  .footer {
     height: 420px !important;
   }
-
 }
 
-@media (max-width: 325px){
-  .hero{
-    .wave, .wave:before, .wave:after{
+@media (max-width: 325px) {
+  .hero {
+    .wave,
+    .wave:before,
+    .wave:after {
       width: 165vw !important;
     }
   }
@@ -757,7 +853,6 @@ body {
   span {
     color: white;
   }
-
   .modal-header {
     border: none !important;
     position: absolute;
@@ -765,15 +860,32 @@ body {
     top: -5px;
   }
   .modal-1 {
-    width: 500px;
     &__left {
       .form-check {
         height: initial !important;
-      }
+    }
+    input:focus{
+        background: var(--light-gray) !important;
+    }
     }
     &__right {
       img {
-        height: 370px;
+        height: 451px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1367px) {
+  .modal-1 {
+    width: 100% !important;
+    &__left {
+      display: block !important;
+    }
+    &__right {
+      img {
+        width: 100%;
+        height: 451px !important;
       }
     }
   }
@@ -783,7 +895,6 @@ body {
   span {
     color: white;
   }
-
   .modal-content {
     border: 2px solid white;
     border-radius: 5px;
@@ -793,11 +904,13 @@ body {
       right: 0px;
       top: -5px;
     }
-
     input {
       border-radius: 50px;
       padding-left: 15px;
     }
+  }
+  #getacashoffer:hover{
+    background-color: var(--secondary) !important;
   }
 }
 
@@ -805,4 +918,204 @@ body {
   .information-top {
     display: none !important;
   }
+}
+
+.SearchResultsMain {
+  background: var(--white) !important;
+  margin: 10px 0px;
+  max-height: 188px;
+  overflow: auto;
+  position: absolute;
+  top: 54px;
+  z-index: 3;
+  height: 100px !important;
+  width: calc(100% - 100px);
+  .SearchResults {
+    padding-left: 1rem;
+    cursor: pointer;
+    color: var(--secondary) !important;
+  }
+  .SearchResults:hover {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+}
+
+// css added by naeem
+.swiper-slide{
+  .slide-data{
+    flex-direction: column;
+    margin-top: -30px !important;
+    padding: 30px 0px;
+    .reviewstars {
+      i {
+        color: #5ea510;
+      }
+    }
+    .review-location{
+      margin-top: auto;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .slide-data{
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    .review-stars{
+      width: auto !important;
+    }
+
+    .review-name{
+      display: none;
+    }
+    .review-location{
+      margin-top: 0 !important;
+    }
+  }
+  .review-text{
+      width: 100%;
+      height: 200px;
+      text-overflow: ellipsis;
+      overflow: overlay;
+  }
+}
+
+@media (max-width: 767px){
+  .slide-data{
+    .review-location{
+      margin-left: auto !important;
+    }
+  }
+}
+
+
+.callus {
+  margin-top: 10px;
+  font-weight: 500;
+  margin-left: 34px;
+  span {
+    color: var(--primary);
+  }
+}
+
+.modal-1__left {
+  height: 451px;
+  .agree-checkbox {
+    font-weight: 500;
+    a {
+      color: var(--primary);
+    }
+  }
+  h4 {
+    font-size: 20px !important;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 28px !important;
+  }
+  .form-control {
+    border-radius: 24px;
+  }
+  .--custom-button {
+    width: 100%;
+  }
+}
+
+.modal-1__right{
+  height: 451px;
+  img{
+    height: 100%;
+  }
+}
+
+.privacy {
+  .topheader {
+    background: #f2f2f2 none repeat scroll 0 0;
+    position: relative;
+    z-index: 10;
+    padding: 20px 0;
+    a {
+      display: inline-block;
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.modal-2-outer {
+  .form-check .container input:checked ~ .checkmark {
+    background: #fff;
+  }
+  .form-check .container .checkmark:after {
+    border-color: var(--primary);
+  }
+}
+
+// css added by naeem **********End
+
+#SelectedAddress {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--secondary) !important;
+  height: 60px;
+  align-items: center;
+  padding-left: 1rem;
+  position: relative;
+  border-radius: 10px !important;
+  p {
+    color: white;
+    margin: 0px !important;
+  }
+  span {
+    float: right;
+    padding-right: 0px !important;
+    margin-top: 0px !important;
+    font-size: 11px;
+    display: block;
+    height: 100%;
+    margin-top: 0px;
+    border-radius: 10px;
+    a {
+      color: #ffffff !important;
+      float: right;
+      cursor: pointer;
+      display: block;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+#addressonclickselect, #address1, #addressfiveseconds, #icsaddressinput {
+  border-radius: 50px !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 98%;
+  background-position-y: 6px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  padding-right: 2rem;
+}
+
+#address1{
+    height: 52px;
+    border-radius: 50px;
+    padding-left: 30px;
+    background-position-y: 15px;
+}
+
+.click-to-call{
+  text-decoration: none;
+  color: inherit;
+}
+
+.click-to-call:hover{
+  text-decoration: none;
+  color: inherit;
 }

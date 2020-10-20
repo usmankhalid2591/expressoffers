@@ -1,0 +1,4 @@
+[13-Oct-2020 08:41:17 UTC] PHP Warning:  Illegal string offset 'code' in /home/expressgroup/public_html/expressoffers.today/createLeadAndSendEmail.php on line 34
+[13-Oct-2020 10:06:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/expressgroup/public_html/expressoffers.today/createLeadAndSendEmail.php:33) in /home/expressgroup/public_html/expressoffers.today/createLeadAndSendEmail.php on line 39
+[13-Oct-2020 10:10:26 UTC] PHP Fatal error:  Class 'Yii' not found in /home/expressgroup/public_html/expressoffers.today/Thankyou.php on line 7
+[13-Oct-2020 10:10:55 UTC] PHP Fatal error:  Class 'Yii' not found in /home/expressgroup/public_html/expressoffers.today/Thankyou.php on line 7
